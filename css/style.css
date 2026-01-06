@@ -1,23 +1,79 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header{
-    background-color: cyan;
-}
-
-.contenedor-pasapalabra{
+body{
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #34A6F4;
 }
 
-.letra{
-    background-color: green;
-    color: white;
+header {
+    background-color: #64BCF7;
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-pasapalabra {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    background-color: #51A2FF;
+}
+
+.contenedor-abecedario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.contenedor-letra-actual{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 40px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input{
+    font-size: 20px;
+    width: 300px;
+    outline: none;
+}
+
+#letra-actual{
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.letra {
+    display: flex;
     width: 40px;
     height: 40px;
-    text-align: center;
-    align-content: center;
-    border-radius: 50%
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #2380eb;
+    color: white;
 }
