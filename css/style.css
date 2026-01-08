@@ -8,17 +8,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #34A6F4;
+    background-color: #74D4FF;
 }
 
 header {
-    background-color: #64BCF7;
+    background-color: #00AEFF;
     text-align: center;
     width: 100%;
 }
 
 .contenedor-pasapalabra {
-    margin-top: 20px;
+    margin-top: 80px;
     border: 1px solid black;
     padding: 20px;
     border-radius: 5px;
@@ -27,7 +27,7 @@ header {
     align-items: center;
     gap: 20px;
     width: 300px;
-    background-color: #51A2FF;
+    background-color: #00AEFF;
 }
 
 .contenedor-abecedario{
@@ -44,14 +44,35 @@ header {
     align-items: center;
     border: 1px solid black;
     padding: 5px 40px;
+    width: 200px;
+    min-height: 50px;
     border-radius: 5px;
     background-color: white;
 }
 
 input{
-    font-size: 20px;
-    width: 300px;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
     outline: none;
+    text-align: center;
+}
+
+#boton-pasapalabra{
+    font-size: 20px;
+    background-color: #FFD230;
+    border: 2px solid white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+#boton-pasapalabra:hover{
+    background-color: #755C00;
+    color: white;
+    cursor: pointer;
 }
 
 #letra-actual{
@@ -61,19 +82,34 @@ input{
     left: -15px;
     font-weight: bold;
     border: 1px solid black;
-    background-color: white;
+    background-color: #0072A3;
+    color: white;
     padding: 10px;
     border-radius: 10px;
+}
+
+#cronometro{
+    position: absolute;
+    top: -15px;
+    right: -25px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .letra {
     display: flex;
     width: 40px;
     height: 40px;
+    font-size: 20px;
     align-items: center;
+    font-weight: bold;
     justify-content: center;
     border-radius: 50%;
     border: 2px solid white;
-    background-color: #2380eb;
+    background-color: #0072A3;
     color: white;
 }
+
