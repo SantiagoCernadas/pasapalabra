@@ -18,7 +18,8 @@ header {
     width: 100%;
 }
 
-.contenedor-pasapalabra {
+
+.contenedor-pasapalabra, .contenedor-inicio{
     margin-top: 80px;
     border: 3px solid black;
     padding: 20px;
@@ -61,20 +62,35 @@ input{
     text-align: center;
 }
 
-#boton-pasapalabra{
+button{
     font-size: 20px;
-    background-color: #FFD230;
     border: 2px solid white;
     padding: 8px 20px;
     border-radius: 20px;
     color: black;
 }
 
+.contenedor-inicio button{
+    background-color: #82E0AA;
+}
+
+#boton-pasapalabra{
+    background-color: #FFD230;
+}
+
+.contenedor-inicio button:hover{
+    background-color: #21834B;
+    color: white;
+    cursor: pointer;
+}
+
+
 #boton-pasapalabra:hover{
     background-color: #755C00;
     color: white;
     cursor: pointer;
 }
+
 
 #letra-actual{
     font-size: 25px;
@@ -115,3 +131,8 @@ input{
     color: white;
 }
 
+footer{
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+}
