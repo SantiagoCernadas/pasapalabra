@@ -3,13 +3,16 @@ const botonComoJugar = document.getElementById("boton-como-jugar");
 
 const contenedorPasapalabra = document.querySelector('.contenedor-pasapalabra');
 const contenedorInicio = document.querySelector('.contenedor-inicio');
-
 const inputRespuesta = document.getElementById('input-respuesta');
+const letrasRosco = document.querySelectorAll('.letra');
+
+const letrasAbecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
 
 contenedorPasapalabra.style.display = 'none';
 
 var partida = {
-    roscoPartida: [],
+    roscoPartida: generarRosco(),
     letrasRestantes: 0,
     aciertos: 0,
     fallos: 0 
@@ -37,16 +40,17 @@ inputRespuesta.addEventListener('keydown',function(e){
 
 
 function iniciarPartida(){
-    partida.roscoPartida = generarRosco();
-    console.log(partida.roscoPartida);
+    letrasRosco[0].style.backgroundColor = 'yellow';
+    letrasRosco[0].style.color = 'black';
+    console.log(partida);
 }
 
 
 function generarRosco(){
-    //26 letras
-    //letra, indice, definicion, respondida
+
     var rosco = [];
-    rosco.push({letra: 'A', indice: "Empieza con A", definición:"Arbol", respondida: false});
-    rosco.push({letra: 'B', indice: "Empieza con B", definición:"Ballena", respondida: false});
+    letrasAbecedario.forEach( (e,i) => {
+        rosco.push({letraHTML: letrasRosco[i],letra: e,palabra: '', indice: '', definición:'', respondida: false});
+    })
     return rosco;
 }
