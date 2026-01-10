@@ -1,3 +1,5 @@
+import * as lector from './lectorArchivo.js';
+
 const botonJugar = document.getElementById("boton-jugar");
 const botonComoJugar = document.getElementById("boton-como-jugar");
 
@@ -39,10 +41,10 @@ inputRespuesta.addEventListener('keydown',function(e){
 })
 
 
-function iniciarPartida(){
-    letrasRosco[0].style.backgroundColor = 'yellow';
-    letrasRosco[0].style.color = 'black';
-    console.log(partida);
+async function iniciarPartida(){
+    var letraActual = 0;
+    var rta = await lector.leerArchivo();
+    console.log(rta);
 }
 
 
@@ -50,7 +52,7 @@ function generarRosco(){
 
     var rosco = [];
     letrasAbecedario.forEach( (e,i) => {
-        rosco.push({letraHTML: letrasRosco[i],letra: e,palabra: '', indice: '', definición:'', respondida: false});
+        rosco.push({letraHTML: letrasRosco[i],letra: e,palabra: '', indice: '', definición:'',respuesta:'', respondida: false});
     })
     return rosco;
 }
