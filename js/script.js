@@ -10,15 +10,16 @@ const letrasRosco = document.querySelectorAll('.letra');
 
 const letrasAbecedario = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
-
 contenedorPasapalabra.style.display = 'none';
 
 var partida = {
     roscoPartida: generarRosco(),
     letrasRestantes: 26,
+    letraActual: 0,
     aciertos: 0,
-    fallos: 0 
+    fallos: 0
 }
+
 
 
 botonJugar.addEventListener('click',() => {
@@ -34,7 +35,18 @@ botonComoJugar.addEventListener('click',() => {
 inputRespuesta.addEventListener('keydown',function(e){
     if(e.key === 'Enter'){
         if(inputRespuesta.value !== ''){
-            alert(inputRespuesta.value);
+            if(respuestaCorrecta(partida.roscoPartida[partida.letraActual].respuesta,inputRespuesta.value)){
+                alert("correcto!!");
+                partida.aciertos++;
+            }
+            else{
+                alert("Incorrecto. La palabra era: " + partida.roscoPartida[partida.letraActual].respuesta);
+                partida.fallos++;
+            }
+
+            partida.roscoPartida[partida.letraActual].respondida = true;
+            partida.letraActual++;
+            definirPalabra(partida.letraActual);
             inputRespuesta.value = '';
         }
     }
@@ -42,11 +54,18 @@ inputRespuesta.addEventListener('keydown',function(e){
 
 
 async function iniciarPartida(){
-    var letraActual = 0;
     await generarRoscoJuego(partida.roscoPartida);
-    console.log(partida.roscoPartida)
+    partida.letrasRestantes = 26;
+    partida.letraActual = 0;
+    partida.aciertos = 0;
+    partida.fallos = 0;
+    definirPalabra(partida.letraActual);
 }
 
+function definirPalabra(letraActual){
+    document.getElementById("texto-letra-indice").textContent = partida.roscoPartida[letraActual].tipo + " " + partida.roscoPartida[letraActual].letra;
+    document.getElementById("texto-definicion").textContent = partida.roscoPartida[letraActual].definicion;
+}
 
 function generarRosco(){
 
@@ -71,4 +90,14 @@ async function generarRoscoJuego (rosco){
     
 
     return rosco;
+}
+
+function respuestaCorrecta(palabra, respuesta) {
+  const palabraMinuscula = palabra.toLowerCase();
+  const respuestaMinuscula = respuesta.toLowerCase();
+
+  const palabraLimpia = palabraMinuscula.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const respuestaLimpia = respuestaMinuscula.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  return palabraLimpia === respuestaLimpia;
 }

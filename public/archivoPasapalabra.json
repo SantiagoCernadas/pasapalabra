@@ -1,156 +1,156 @@
 [
   [
-    { "letra": "A", "tipo": "Empieza", "definicion": "Insecto que produce miel", "respuesta": "Abeja" },
-    { "letra": "A", "tipo": "Empieza", "definicion": "Vehículo que vuela", "respuesta": "Avion" },
+    { "letra": "A", "tipo": "Empieza con", "definicion": "Insecto que produce miel", "respuesta": "Abeja" },
+    { "letra": "A", "tipo": "Empieza con", "definicion": "Vehículo que vuela", "respuesta": "Avion" },
     { "letra": "A", "tipo": "Contiene", "definicion": "Líquido vital transparente", "respuesta": "Agua" },
-    { "letra": "A", "tipo": "Empieza", "definicion": "Fruto del olivo", "respuesta": "Aceituna" },
+    { "letra": "A", "tipo": "Empieza con", "definicion": "Fruto del olivo", "respuesta": "Aceituna" },
     { "letra": "A", "tipo": "Contiene", "definicion": "Fruta naranja rica en vitamina C", "respuesta": "Naranja" }
   ],
   [
-    { "letra": "B", "tipo": "Empieza", "definicion": "Embarcación grande", "respuesta": "Barco" },
-    { "letra": "B", "tipo": "Empieza", "definicion": "Objeto para jugar fútbol", "respuesta": "Balon" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Embarcación grande", "respuesta": "Barco" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Objeto para jugar fútbol", "respuesta": "Balon" },
     { "letra": "B", "tipo": "Contiene", "definicion": "Persona que apaga incendios", "respuesta": "Bombero" },
-    { "letra": "B", "tipo": "Empieza", "definicion": "Recipiente para líquidos", "respuesta": "Botella" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Recipiente para líquidos", "respuesta": "Botella" },
     { "letra": "B", "tipo": "Contiene", "definicion": "Utensilio para barrer", "respuesta": "Escoba" }
   ],
   [
-    { "letra": "C", "tipo": "Empieza", "definicion": "Mueble para dormir", "respuesta": "Cama" },
-    { "letra": "C", "tipo": "Empieza", "definicion": "Lugar para ver películas", "respuesta": "Cine" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Mueble para dormir", "respuesta": "Cama" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Lugar para ver películas", "respuesta": "Cine" },
     { "letra": "C", "tipo": "Contiene", "definicion": "Bebida negra caliente", "respuesta": "Cafe" },
-    { "letra": "C", "tipo": "Empieza", "definicion": "Animal que da leche", "respuesta": "Vaca" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Animal que da leche", "respuesta": "Vaca" },
     { "letra": "C", "tipo": "Contiene", "definicion": "Dulce hecho de cacao", "respuesta": "Chocolate" }
   ],
   [
-    { "letra": "D", "tipo": "Empieza", "definicion": "Objeto cúbico para jugar", "respuesta": "Dado" },
-    { "letra": "D", "tipo": "Empieza", "definicion": "Parte de la boca para morder", "respuesta": "Diente" },
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Objeto cúbico para jugar", "respuesta": "Dado" },
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Parte de la boca para morder", "respuesta": "Diente" },
     { "letra": "D", "tipo": "Contiene", "definicion": "Persona que cura los dientes", "respuesta": "Dentista" },
-    { "letra": "D", "tipo": "Empieza", "definicion": "Dinero en papel o metal", "respuesta": "Dinero" },
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Dinero en papel o metal", "respuesta": "Dinero" },
     { "letra": "D", "tipo": "Contiene", "definicion": "Animal que vivió hace millones de años", "respuesta": "Dinosaurio" }
   ],
   [
-    { "letra": "E", "tipo": "Empieza", "definicion": "Objeto que refleja la imagen", "respuesta": "Espejo" },
-    { "letra": "E", "tipo": "Empieza", "definicion": "Animal con trompa", "respuesta": "Elefante" },
+    { "letra": "E", "tipo": "Empieza con con", "definicion": "Objeto que refleja la imagen", "respuesta": "Espejo" },
+    { "letra": "E", "tipo": "Empieza con con", "definicion": "Animal con trompa", "respuesta": "Elefante" },
     { "letra": "E", "tipo": "Contiene", "definicion": "Lugar donde se guardan libros", "respuesta": "Estante" },
-    { "letra": "E", "tipo": "Empieza", "definicion": "Para subir pisos sin caminar", "respuesta": "Ascensor" },
+    { "letra": "E", "tipo": "Empieza con con", "definicion": "Para subir pisos sin caminar", "respuesta": "Ascensor" },
     { "letra": "E", "tipo": "Contiene", "definicion": "Cuerpo celeste que brilla", "respuesta": "Estrella" }
   ],
   [
-    { "letra": "F", "tipo": "Empieza", "definicion": "Hacer fotos con una máquina", "respuesta": "Fotografiar" },
-    { "letra": "F", "tipo": "Empieza", "definicion": "Fruta dulce y roja pequeña", "respuesta": "Frutilla" },
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Hacer fotos con una máquina", "respuesta": "Fotografiar" },
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Fruta dulce y roja pequeña", "respuesta": "Frutilla" },
     { "letra": "F", "tipo": "Contiene", "definicion": "Persona que tiene mucha fuerza", "respuesta": "Fuerte" },
-    { "letra": "F", "tipo": "Empieza", "definicion": "Luz y calor por combustión", "respuesta": "Fuego" },
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Luz y calor por combustión", "respuesta": "Fuego" },
     { "letra": "F", "tipo": "Contiene", "definicion": "Instrumento para ver las estrellas", "respuesta": "Telescopio" }
   ],
   [
-    { "letra": "G", "tipo": "Empieza", "definicion": "Animal que maúlla", "respuesta": "Gato" },
-    { "letra": "G", "tipo": "Empieza", "definicion": "Instrumento de seis cuerdas", "respuesta": "Guitarra" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Animal que maúlla", "respuesta": "Gato" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Instrumento de seis cuerdas", "respuesta": "Guitarra" },
     { "letra": "G", "tipo": "Contiene", "definicion": "Líquido para que ande el auto", "respuesta": "Gasolina" },
-    { "letra": "G", "tipo": "Empieza", "definicion": "Persona que vigila", "respuesta": "Guardia" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Persona que vigila", "respuesta": "Guardia" },
     { "letra": "G", "tipo": "Contiene", "definicion": "Ave que pone huevos", "respuesta": "Gallina" }
   ],
   [
-    { "letra": "H", "tipo": "Empieza", "definicion": "Cuerpo redondeado que ponen las aves", "respuesta": "Huevo" },
-    { "letra": "H", "tipo": "Empieza", "definicion": "Hielo que cae del cielo", "respuesta": "Granizo" },
+    { "letra": "H", "tipo": "Empieza con", "definicion": "Cuerpo redondeado que ponen las aves", "respuesta": "Huevo" },
+    { "letra": "H", "tipo": "Empieza con", "definicion": "Hielo que cae del cielo", "respuesta": "Granizo" },
     { "letra": "H", "tipo": "Contiene", "definicion": "Lugar donde viven hormigas", "respuesta": "Hormiguero" },
-    { "letra": "H", "tipo": "Empieza", "definicion": "Para cortar leña", "respuesta": "Hacha" },
+    { "letra": "H", "tipo": "Empieza con", "definicion": "Para cortar leña", "respuesta": "Hacha" },
     { "letra": "H", "tipo": "Contiene", "definicion": "Comida que se come al mediodía", "respuesta": "Almuerzo" }
   ],
   [
-    { "letra": "I", "tipo": "Empieza", "definicion": "Casa de hielo", "respuesta": "Iglu" },
-    { "letra": "I", "tipo": "Empieza", "definicion": "Tierra rodeada de agua", "respuesta": "Isla" },
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Casa de hielo", "respuesta": "Iglu" },
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Tierra rodeada de agua", "respuesta": "Isla" },
     { "letra": "I", "tipo": "Contiene", "definicion": "Objeto que atrae metales", "respuesta": "Iman" },
-    { "letra": "I", "tipo": "Empieza", "definicion": "Donde se imprimen libros", "respuesta": "Imprenta" },
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Donde se imprimen libros", "respuesta": "Imprenta" },
     { "letra": "I", "tipo": "Contiene", "definicion": "Hacer un dibujo", "respuesta": "Ilustrar" }
   ],
   [
-    { "letra": "J", "tipo": "Empieza", "definicion": "Para lavarse las manos", "respuesta": "Jabon" },
-    { "letra": "J", "tipo": "Empieza", "definicion": "Animal de cuello largo", "respuesta": "Jirafa" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Para lavarse las manos", "respuesta": "Jabon" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Animal de cuello largo", "respuesta": "Jirafa" },
     { "letra": "J", "tipo": "Contiene", "definicion": "Persona que imparte justicia", "respuesta": "Juez" },
-    { "letra": "J", "tipo": "Empieza", "definicion": "Donde se plantan flores", "respuesta": "Jardin" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Donde se plantan flores", "respuesta": "Jardin" },
     { "letra": "J", "tipo": "Contiene", "definicion": "Objeto para jugar", "respuesta": "Juguete" }
   ],
   [
-    { "letra": "K", "tipo": "Empieza", "definicion": "Mil gramos", "respuesta": "Kilo" },
-    { "letra": "K", "tipo": "Empieza", "definicion": "Arte marcial japonés", "respuesta": "Karate" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Mil gramos", "respuesta": "Kilo" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Arte marcial japonés", "respuesta": "Karate" },
     { "letra": "K", "tipo": "Contiene", "definicion": "Salsa de tomate", "respuesta": "Ketchup" },
-    { "letra": "K", "tipo": "Empieza", "definicion": "Coche de alquiler con conductor", "respuesta": "Taxi" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Coche de alquiler con conductor", "respuesta": "Taxi" },
     { "letra": "K", "tipo": "Contiene", "definicion": "Fruta verde con pelos", "respuesta": "Kiwi" }
   ],
   [
-    { "letra": "L", "tipo": "Empieza", "definicion": "Satélite de la Tierra", "respuesta": "Luna" },
-    { "letra": "L", "tipo": "Empieza", "definicion": "Para escribir", "respuesta": "Lapiz" },
+    { "letra": "L", "tipo": "Empieza con", "definicion": "Satélite de la Tierra", "respuesta": "Luna" },
+    { "letra": "L", "tipo": "Empieza con", "definicion": "Para escribir", "respuesta": "Lapiz" },
     { "letra": "L", "tipo": "Contiene", "definicion": "Máquina para medir el tiempo", "respuesta": "Reloj" },
-    { "letra": "L", "tipo": "Empieza", "definicion": "Rey de la selva", "respuesta": "Leon" },
+    { "letra": "L", "tipo": "Empieza con", "definicion": "Rey de la selva", "respuesta": "Leon" },
     { "letra": "L", "tipo": "Contiene", "definicion": "Donde se guardan platos", "respuesta": "Vajilla" }
   ],
   [
-    { "letra": "M", "tipo": "Empieza", "definicion": "Fruta roja o verde", "respuesta": "Manzana" },
-    { "letra": "M", "tipo": "Empieza", "definicion": "Para comer encima", "respuesta": "Mesa" },
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Fruta roja o verde", "respuesta": "Manzana" },
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Para comer encima", "respuesta": "Mesa" },
     { "letra": "M", "tipo": "Contiene", "definicion": "Parte del brazo", "respuesta": "Muñeca" },
-    { "letra": "M", "tipo": "Empieza", "definicion": "Persona que hace magia", "respuesta": "Mago" },
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Persona que hace magia", "respuesta": "Mago" },
     { "letra": "M", "tipo": "Contiene", "definicion": "Donde se compra comida", "respuesta": "Mercado" }
   ],
   [
-    { "letra": "N", "tipo": "Empieza", "definicion": "Masa de vapor en el cielo", "respuesta": "Nube" },
-    { "letra": "N", "tipo": "Empieza", "definicion": "Fruta naranja", "respuesta": "Naranja" },
+    { "letra": "N", "tipo": "Empieza con", "definicion": "Masa de vapor en el cielo", "respuesta": "Nube" },
+    { "letra": "N", "tipo": "Empieza con", "definicion": "Fruta naranja", "respuesta": "Naranja" },
     { "letra": "N", "tipo": "Contiene", "definicion": "Viaja por el espacio", "respuesta": "Astronauta" },
-    { "letra": "N", "tipo": "Empieza", "definicion": "Barco para ir bajo el mar", "respuesta": "Submarino" },
+    { "letra": "N", "tipo": "Empieza con", "definicion": "Barco para ir bajo el mar", "respuesta": "Submarino" },
     { "letra": "N", "tipo": "Contiene", "definicion": "Deporte en el agua", "respuesta": "Natacion" }
   ],
   [
-    { "letra": "O", "tipo": "Empieza", "definicion": "Órgano de la visión", "respuesta": "Ojo" },
-    { "letra": "O", "tipo": "Empieza", "definicion": "Metal precioso amarillo", "respuesta": "Oro" },
+    { "letra": "O", "tipo": "Empieza con", "definicion": "Órgano de la visión", "respuesta": "Ojo" },
+    { "letra": "O", "tipo": "Empieza con", "definicion": "Metal precioso amarillo", "respuesta": "Oro" },
     { "letra": "O", "tipo": "Contiene", "definicion": "Animal con ocho brazos", "respuesta": "Pulpo" },
-    { "letra": "O", "tipo": "Empieza", "definicion": "Para escuchar", "respuesta": "Oido" },
+    { "letra": "O", "tipo": "Empieza con", "definicion": "Para escuchar", "respuesta": "Oido" },
     { "letra": "O", "tipo": "Contiene", "definicion": "Donde se guardan autos", "respuesta": "Garaje" }
   ],
   [
-    { "letra": "P", "tipo": "Empieza", "definicion": "Animal fiel", "respuesta": "Perro" },
-    { "letra": "P", "tipo": "Empieza", "definicion": "Para protegerse de lluvia", "respuesta": "Paraguas" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Animal fiel", "respuesta": "Perro" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Para protegerse de lluvia", "respuesta": "Paraguas" },
     { "letra": "P", "tipo": "Contiene", "definicion": "Lugar con arena y mar", "respuesta": "Playa" },
-    { "letra": "P", "tipo": "Empieza", "definicion": "Para escribir con tinta", "respuesta": "Lapicera" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Para escribir con tinta", "respuesta": "Lapicera" },
     { "letra": "P", "tipo": "Contiene", "definicion": "Fruta verde o roja", "respuesta": "Pera" }
   ],
   [
-    { "letra": "Q", "tipo": "Empieza", "definicion": "Alimento de leche", "respuesta": "Queso" },
+    { "letra": "Q", "tipo": "Empieza con", "definicion": "Alimento de leche", "respuesta": "Queso" },
     { "letra": "Q", "tipo": "Contiene", "definicion": "Para jugar tenis", "respuesta": "Raqueta" },
-    { "letra": "Q", "tipo": "Empieza", "definicion": "Persona que se queja", "respuesta": "Quejica" },
+    { "letra": "Q", "tipo": "Empieza con", "definicion": "Persona que se queja", "respuesta": "Quejica" },
     { "letra": "Q", "tipo": "Contiene", "definicion": "Pequeño barco", "respuesta": "Paquebote" },
-    { "letra": "Q", "tipo": "Empieza", "definicion": "Signo para preguntar", "respuesta": "Que" }
+    { "letra": "Q", "tipo": "Empieza con", "definicion": "Signo para preguntar", "respuesta": "Que" }
   ],
   [
-    { "letra": "R", "tipo": "Empieza", "definicion": "Marca las horas", "respuesta": "Reloj" },
-    { "letra": "R", "tipo": "Empieza", "definicion": "Flor con espinas", "respuesta": "Rosa" },
+    { "letra": "R", "tipo": "Empieza con", "definicion": "Marca las horas", "respuesta": "Reloj" },
+    { "letra": "R", "tipo": "Empieza con", "definicion": "Flor con espinas", "respuesta": "Rosa" },
     { "letra": "R", "tipo": "Contiene", "definicion": "Para barrer", "respuesta": "Escoba" },
-    { "letra": "R", "tipo": "Empieza", "definicion": "Animal que come queso", "respuesta": "Raton" },
+    { "letra": "R", "tipo": "Empieza con", "definicion": "Animal que come queso", "respuesta": "Raton" },
     { "letra": "R", "tipo": "Contiene", "definicion": "Lugar para herramientas", "respuesta": "Cuarto" }
   ],
   [
-    { "letra": "S", "tipo": "Empieza", "definicion": "Para sentarse", "respuesta": "Silla" },
-    { "letra": "S", "tipo": "Empieza", "definicion": "Estrella que da calor", "respuesta": "Sol" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Para sentarse", "respuesta": "Silla" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Estrella que da calor", "respuesta": "Sol" },
     { "letra": "S", "tipo": "Contiene", "definicion": "Calzado de verano", "respuesta": "Sandalia" },
-    { "letra": "S", "tipo": "Empieza", "definicion": "Condimento para la comida", "respuesta": "Sal" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Condimento para la comida", "respuesta": "Sal" },
     { "letra": "S", "tipo": "Contiene", "definicion": "Dulce horneado", "respuesta": "Pastel" }
   ],
   [
-    { "letra": "T", "tipo": "Empieza", "definicion": "Para ver tele", "respuesta": "Televisor" },
-    { "letra": "T", "tipo": "Empieza", "definicion": "Fruto rojo de ensalada", "respuesta": "Tomate" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Para ver tele", "respuesta": "Televisor" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Fruto rojo de ensalada", "respuesta": "Tomate" },
     { "letra": "T", "tipo": "Contiene", "definicion": "Viaja por placer", "respuesta": "Turista" },
-    { "letra": "T", "tipo": "Empieza", "definicion": "Para pinchar comida", "respuesta": "Tenedor" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Para pinchar comida", "respuesta": "Tenedor" },
     { "letra": "T", "tipo": "Contiene", "definicion": "Animal lento con caparazón", "respuesta": "Tortuga" }
   ],
   [
-    { "letra": "U", "tipo": "Empieza", "definicion": "Para hacer vino", "respuesta": "Uva" },
+    { "letra": "U", "tipo": "Empieza con", "definicion": "Para hacer vino", "respuesta": "Uva" },
     { "letra": "U", "tipo": "Contiene", "definicion": "Instrumento de viento", "respuesta": "Tuba" },
-    { "letra": "U", "tipo": "Empieza", "definicion": "Animal con un cuerno", "respuesta": "Unicornio" },
+    { "letra": "U", "tipo": "Empieza con", "definicion": "Animal con un cuerno", "respuesta": "Unicornio" },
     { "letra": "U", "tipo": "Contiene", "definicion": "Músculo del brazo", "respuesta": "Musculo" },
-    { "letra": "U", "tipo": "Empieza", "definicion": "Herramienta útil", "respuesta": "Utensilio" }
+    { "letra": "U", "tipo": "Empieza con", "definicion": "Herramienta útil", "respuesta": "Utensilio" }
   ],
   [
-    { "letra": "V", "tipo": "Empieza", "definicion": "Da leche y hace muuu", "respuesta": "Vaca" },
-    { "letra": "V", "tipo": "Empieza", "definicion": "Para refrescar el aire", "respuesta": "Ventilador" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Da leche y hace muuu", "respuesta": "Vaca" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Para refrescar el aire", "respuesta": "Ventilador" },
     { "letra": "V", "tipo": "Contiene", "definicion": "Estación de calor", "respuesta": "Verano" },
-    { "letra": "V", "tipo": "Empieza", "definicion": "Vive al lado tuyo", "respuesta": "Vecino" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Vive al lado tuyo", "respuesta": "Vecino" },
     { "letra": "V", "tipo": "Contiene", "definicion": "Color de plantas", "respuesta": "Verde" }
   ],
   [
@@ -168,17 +168,17 @@
     { "letra": "X", "tipo": "Contiene", "definicion": "Persona que viene de fuera", "respuesta": "Extranjero" }
   ],
   [
-    { "letra": "Y", "tipo": "Empieza", "definicion": "Barco de lujo", "respuesta": "Yate" },
-    { "letra": "Y", "tipo": "Empieza", "definicion": "Parte amarilla del huevo", "respuesta": "Yema" },
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Barco de lujo", "respuesta": "Yate" },
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Parte amarilla del huevo", "respuesta": "Yema" },
     { "letra": "Y", "tipo": "Contiene", "definicion": "Persona que hace payasadas", "respuesta": "Payaso" },
-    { "letra": "Y", "tipo": "Empieza", "definicion": "Hierba medicinal", "respuesta": "Yerba" },
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Hierba medicinal", "respuesta": "Yerba" },
     { "letra": "Y", "tipo": "Contiene", "definicion": "Salsa blanca para ensaladas", "respuesta": "Mayonesa" }
   ],
   [
-    { "letra": "Z", "tipo": "Empieza", "definicion": "Calzado", "respuesta": "Zapato" },
-    { "letra": "Z", "tipo": "Empieza", "definicion": "Naranja y alargada para comer", "respuesta": "Zanahoria" },
+    { "letra": "Z", "tipo": "Empieza con", "definicion": "Calzado", "respuesta": "Zapato" },
+    { "letra": "Z", "tipo": "Empieza con", "definicion": "Naranja y alargada para comer", "respuesta": "Zanahoria" },
     { "letra": "Z", "tipo": "Contiene", "definicion": "Donde hay animales en cautiverio", "respuesta": "Zoologico" },
-    { "letra": "Z", "tipo": "Empieza", "definicion": "Para subir camperas", "respuesta": "Cierre" },
+    { "letra": "Z", "tipo": "Empieza con", "definicion": "Para subir camperas", "respuesta": "Cierre" },
     { "letra": "Z", "tipo": "Contiene", "definicion": "Bebida de frutas exprimidas", "respuesta": "Zumo" }
   ]
 ]
