@@ -15,7 +15,7 @@ contenedorPasapalabra.style.display = 'none';
 
 var partida = {
     roscoPartida: generarRosco(),
-    letrasRestantes: 0,
+    letrasRestantes: 26,
     aciertos: 0,
     fallos: 0 
 }
@@ -43,8 +43,8 @@ inputRespuesta.addEventListener('keydown',function(e){
 
 async function iniciarPartida(){
     var letraActual = 0;
-    var rta = await lector.leerArchivo();
-    console.log(rta);
+    await generarRoscoJuego(partida.roscoPartida);
+    console.log(partida.roscoPartida)
 }
 
 
@@ -52,7 +52,23 @@ function generarRosco(){
 
     var rosco = [];
     letrasAbecedario.forEach( (e,i) => {
-        rosco.push({letraHTML: letrasRosco[i],letra: e,palabra: '', indice: '', definición:'',respuesta:'', respondida: false});
+        rosco.push({letraHTML: letrasRosco[i],letra: e, tipo: '', definicion:'',respuesta:'', respondida: false});
     })
+    return rosco;
+}
+
+
+async function generarRoscoJuego (rosco){
+    const archivo = await lector.leerArchivo();
+
+    letrasAbecedario.forEach( (e,i) => {
+        const palabraAleatoria = Math.floor(Math.random() * archivo[i].length);
+        const preguntaActual = archivo[i][palabraAleatoria];
+        rosco[i].tipo = preguntaActual.tipo;
+        rosco[i].definicion = preguntaActual.definicion;
+        rosco[i].respuesta = preguntaActual.respuesta;
+    })
+    
+
     return rosco;
 }

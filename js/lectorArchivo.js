@@ -18,4 +18,3 @@ export async function leerArchivo(){
         console.error("Hubo un problema con la lectura:", error);
     }
 }
-
