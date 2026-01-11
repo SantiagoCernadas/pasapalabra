@@ -99,6 +99,8 @@ button{
     left: -20px;
     border: 1px solid black;
     background-color: #0072A3;
+    width: 20px;
+    text-align: center;
     color: white;
     padding: 5px 12px;
     border-radius: 20px;
