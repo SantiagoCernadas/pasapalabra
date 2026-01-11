@@ -1,7 +1,6 @@
 import * as lector from './lectorArchivo.js';
 
 const botonJugar = document.getElementById("boton-jugar");
-const botonComoJugar = document.getElementById("boton-como-jugar");
 
 const contenedorPasapalabra = document.querySelector('.contenedor-pasapalabra');
 const contenedorInicio = document.querySelector('.contenedor-inicio');
@@ -29,9 +28,6 @@ botonJugar.addEventListener('click', () => {
     contenedorPasapalabra.style.display = 'flex';
 })
 
-botonComoJugar.addEventListener('click', () => {
-    alert("como jugar")
-})
 
 inputRespuesta.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
@@ -46,16 +42,28 @@ inputRespuesta.addEventListener('keydown', function (e) {
             }
 
             partida.roscoPartida[partida.letraActual].respondida = true;
-            buscarLetraDisponible();
-            inputRespuesta.value = '';
+            if (todasRespondidas()) {
+                alert("Fin de la partida.")
+                contenedorPasapalabra.style.display = 'none';
+            }
+            else {
+                buscarLetraDisponible();
+                inputRespuesta.value = '';
+            }
         }
     }
 })
 
 botonPasapalabra.addEventListener('click', () => {
     partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = 'orange';
+    inputRespuesta.value = '';
     buscarLetraDisponible();
 })
+
+function todasRespondidas(){
+    var cantLetrasRespondidas = partida.aciertos + partida.fallos;
+    return cantLetrasRespondidas == 26;
+}
 
 function siguienteLetra() {
     partida.letraActual += 1;
@@ -64,7 +72,7 @@ function siguienteLetra() {
     }
 }
 
-function buscarLetraDisponible(){
+function buscarLetraDisponible() {
     do {
         siguienteLetra();
     } while (partida.roscoPartida[partida.letraActual].respondida)
