@@ -19,7 +19,7 @@ header {
 }
 
 
-.contenedor-pasapalabra, .contenedor-inicio{
+.contenedor-pasapalabra, .contenedor-inicio, .contendor-fin-juego{
     margin-top: 80px;
     border: 3px solid black;
     padding: 20px;
@@ -70,7 +70,7 @@ button{
     color: black;
 }
 
-.contenedor-inicio button{
+.contenedor-inicio button, .contendor-fin-juego button{
     background-color: #82E0AA;
 }
 
@@ -78,7 +78,7 @@ button{
     background-color: #FFD230;
 }
 
-.contenedor-inicio button:hover{
+.contenedor-inicio button:hover, .contendor-fin-juego button:hover{
     background-color: #21834B;
     color: white;
     cursor: pointer;

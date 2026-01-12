@@ -4,16 +4,21 @@ const botonJugar = document.getElementById("boton-jugar");
 
 const contenedorPasapalabra = document.querySelector('.contenedor-pasapalabra');
 const contenedorInicio = document.querySelector('.contenedor-inicio');
+const contenedorFinPartida = document.querySelector('.contendor-fin-juego');
+
 const inputRespuesta = document.getElementById('input-respuesta');
 const letrasRosco = document.querySelectorAll('.letra');
 const botonPasapalabra = document.getElementById('boton-pasapalabra');
+const botonVolverAJugar = document.getElementById('volver-jugar');
+
+const cronometro = document.getElementById('cronometro');
 
 const letrasAbecedario = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-contenedorPasapalabra.style.display = 'none';
+var tiempoRestanteRosco = 100;
 
 var partida = {
-    roscoPartida: generarRosco(),
+    roscoPartida: [],
     letrasRestantes: 26,
     letraActual: 0,
     aciertos: 0,
@@ -25,6 +30,13 @@ var partida = {
 botonJugar.addEventListener('click', () => {
     iniciarPartida();
     contenedorInicio.style.display = 'none';
+    contenedorPasapalabra.style.display = 'flex';
+})
+
+
+botonVolverAJugar.addEventListener('click', () => {
+    iniciarPartida();
+    contenedorFinPartida.style.display = 'none';
     contenedorPasapalabra.style.display = 'flex';
 })
 
@@ -43,8 +55,7 @@ inputRespuesta.addEventListener('keydown', function (e) {
 
             partida.roscoPartida[partida.letraActual].respondida = true;
             if (todasRespondidas()) {
-                alert("Fin de la partida.")
-                contenedorPasapalabra.style.display = 'none';
+                finPartida();
             }
             else {
                 buscarLetraDisponible();
@@ -79,13 +90,46 @@ function buscarLetraDisponible() {
     definirPalabra(partida.letraActual);
 }
 
+function finPartida(){
+    document.getElementById('texto-aciertos').textContent = partida.aciertos;
+    document.getElementById('texto-fallos').textContent = partida.fallos;
+    contenedorPasapalabra.style.display = 'none';
+    contenedorFinPartida.style.display = 'flex';
+}
+
 
 async function iniciarPartida() {
+    tiempoRestanteRosco = 75;
+    cronometro.style.backgroundColor = '#82E0AA';
+    cronometro.textContent = tiempoRestanteRosco;
+    const temporizador = setInterval(()=>{
+        tiempoRestanteRosco--;
+        cronometro.textContent = tiempoRestanteRosco;
+        if(tiempoRestanteRosco < 0){
+            clearInterval(temporizador);
+            finPartida();
+        }
+        else if(tiempoRestanteRosco < 10){
+           cronometro.style.backgroundColor = '#C11007'; 
+        }
+        else if(tiempoRestanteRosco < 25){
+           cronometro.style.backgroundColor = '#E1712B'; 
+        }
+        else if(tiempoRestanteRosco < 50){
+           cronometro.style.backgroundColor = '#FFDF20'; 
+        }
+        else if(tiempoRestanteRosco < 75){
+           cronometro.style.backgroundColor = '#9AE630'; 
+        }
+        
+    },1000)
+    partida.roscoPartida = generarRosco();
     await generarRoscoJuego(partida.roscoPartida);
     partida.letrasRestantes = 26;
     partida.letraActual = 0;
     partida.aciertos = 0;
     partida.fallos = 0;
+    inputRespuesta.value = '';
     definirPalabra(partida.letraActual);
 }
 
@@ -97,10 +141,10 @@ function definirPalabra(letraActual) {
 }
 
 function generarRosco() {
-
     var rosco = [];
     letrasAbecedario.forEach((e, i) => {
         rosco.push({ letraHTML: letrasRosco[i], letra: e, tipo: '', definicion: '', respuesta: '', respondida: false });
+        letrasRosco[i].style.backgroundColor  = '#0072A3'
     })
     return rosco;
 }

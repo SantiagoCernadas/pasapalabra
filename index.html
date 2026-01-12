@@ -18,7 +18,7 @@
             <button id="boton-jugar">Jugar</button>
         </div>
 
-        <div class="contenedor-pasapalabra">
+        <div class="contenedor-pasapalabra" style="display: none;">
             <div class="contenedor-abecedario">
                 <div class="letra">
                     <p>A</p>
@@ -100,7 +100,8 @@
                 </div>
             </div>
 
-            <input type="text" name="" id="input-respuesta" placeholder="Escriba su respuesta y presione 'Enter'" autocomplete="off">
+            <input type="text" name="" id="input-respuesta" placeholder="Escriba su respuesta y presione 'Enter'"
+                autocomplete="off">
             <button id="boton-pasapalabra">Pasapalabra</button>
 
 
@@ -110,6 +111,12 @@
                 <p id="texto-letra-indice">Empieza con A</p>
                 <p id="texto-definicion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rem!</p>
             </div>
+        </div>
+        <div class="contendor-fin-juego" style="display: none;">
+            <h2>Fin de la partida.</h2>
+            <p>Aciertos: <span id="texto-aciertos">0</span></p>
+            <p>Fallos: <span id="texto-fallos">0</span></p>
+            <button id="volver-jugar">Volver a jugar</button>
         </div>
     </main>
 

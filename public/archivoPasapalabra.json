@@ -3,7 +3,7 @@
     { "letra": "A", "tipo": "Empieza con", "definicion": "Insecto que produce miel", "respuesta": "Abeja" },
     { "letra": "A", "tipo": "Empieza con", "definicion": "Vehículo que vuela", "respuesta": "Avion" },
     { "letra": "A", "tipo": "Contiene", "definicion": "Líquido vital transparente", "respuesta": "Agua" },
-    { "letra": "A", "tipo": "Contiene", "definicion": "ruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" }
+    { "letra": "A", "tipo": "Contiene", "definicion": "Fruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" }
   ],
   [
     { "letra": "B", "tipo": "Empieza con", "definicion": "Embarcación grande", "respuesta": "Barco" },
