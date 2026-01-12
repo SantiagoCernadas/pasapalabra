@@ -15,7 +15,7 @@ const cronometro = document.getElementById('cronometro');
 
 const letrasAbecedario = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-var tiempoRestanteRosco = 100;
+var temporizador;
 
 var partida = {
     roscoPartida: [],
@@ -24,7 +24,6 @@ var partida = {
     aciertos: 0,
     fallos: 0
 }
-
 
 
 botonJugar.addEventListener('click', () => {
@@ -55,7 +54,7 @@ inputRespuesta.addEventListener('keydown', function (e) {
 
             partida.roscoPartida[partida.letraActual].respondida = true;
             if (todasRespondidas()) {
-                finPartida();
+                finPartida("Se completo el rosco");
             }
             else {
                 buscarLetraDisponible();
@@ -90,7 +89,9 @@ function buscarLetraDisponible() {
     definirPalabra(partida.letraActual);
 }
 
-function finPartida(){
+function finPartida(mensaje){
+    clearInterval(temporizador);
+    document.getElementById('razon-fin').textContent = mensaje;
     document.getElementById('texto-aciertos').textContent = partida.aciertos;
     document.getElementById('texto-fallos').textContent = partida.fallos;
     contenedorPasapalabra.style.display = 'none';
@@ -99,30 +100,9 @@ function finPartida(){
 
 
 async function iniciarPartida() {
-    tiempoRestanteRosco = 75;
-    cronometro.style.backgroundColor = '#82E0AA';
-    cronometro.textContent = tiempoRestanteRosco;
-    const temporizador = setInterval(()=>{
-        tiempoRestanteRosco--;
-        cronometro.textContent = tiempoRestanteRosco;
-        if(tiempoRestanteRosco < 0){
-            clearInterval(temporizador);
-            finPartida();
-        }
-        else if(tiempoRestanteRosco < 10){
-           cronometro.style.backgroundColor = '#C11007'; 
-        }
-        else if(tiempoRestanteRosco < 25){
-           cronometro.style.backgroundColor = '#E1712B'; 
-        }
-        else if(tiempoRestanteRosco < 50){
-           cronometro.style.backgroundColor = '#FFDF20'; 
-        }
-        else if(tiempoRestanteRosco < 75){
-           cronometro.style.backgroundColor = '#9AE630'; 
-        }
-        
-    },1000)
+
+    temporizador = iniciarTemporizador();
+
     partida.roscoPartida = generarRosco();
     await generarRoscoJuego(partida.roscoPartida);
     partida.letrasRestantes = 26;
@@ -149,6 +129,31 @@ function generarRosco() {
     return rosco;
 }
 
+function iniciarTemporizador(){
+    var tiempoRestanteRosco = 100;
+    cronometro.style.backgroundColor = '#82E0AA';
+    cronometro.textContent = tiempoRestanteRosco;
+    return setInterval(()=>{
+        tiempoRestanteRosco--;
+        cronometro.textContent = tiempoRestanteRosco;
+        if(tiempoRestanteRosco < 0){
+            finPartida("Se acabo el tiempo");
+        }
+        else if(tiempoRestanteRosco < 10){
+           cronometro.style.backgroundColor = '#C11007'; 
+        }
+        else if(tiempoRestanteRosco < 25){
+           cronometro.style.backgroundColor = '#E1712B'; 
+        }
+        else if(tiempoRestanteRosco < 50){
+           cronometro.style.backgroundColor = '#FFDF20'; 
+        }
+        else if(tiempoRestanteRosco < 75){
+           cronometro.style.backgroundColor = '#9AE630'; 
+        }
+        
+    },1000);
+}
 
 async function generarRoscoJuego(rosco) {
     const archivo = await lector.leerArchivo();

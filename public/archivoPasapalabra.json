@@ -45,8 +45,7 @@
   [
     { "letra": "H", "tipo": "Empieza con", "definicion": "Cuerpo redondeado que ponen las aves", "respuesta": "Huevo" },
     { "letra": "H", "tipo": "Contiene", "definicion": "Lugar donde viven hormigas", "respuesta": "Hormiguero" },
-    { "letra": "H", "tipo": "Empieza con", "definicion": "Para cortar leña", "respuesta": "Hacha" },
-    { "letra": "H", "tipo": "Contiene", "definicion": "Comida que se come al mediodía", "respuesta": "Almuerzo" }
+    { "letra": "H", "tipo": "Empieza con", "definicion": "Para cortar leña", "respuesta": "Hacha" }
   ],
   [
     { "letra": "I", "tipo": "Empieza con", "definicion": "Casa de hielo", "respuesta": "Iglu" },
@@ -56,16 +55,16 @@
     { "letra": "I", "tipo": "Empieza con", "definicion": "Hacer un dibujo", "respuesta": "Ilustrar" }
   ],
   [
-    { "letra": "J", "tipo": "Empieza con", "definicion": "Para lavarse las manos", "respuesta": "Jabon" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Para lavarse el cuerpo", "respuesta": "Jabon" },
     { "letra": "J", "tipo": "Empieza con", "definicion": "Animal de cuello largo", "respuesta": "Jirafa" },
     { "letra": "J", "tipo": "Empieza con", "definicion": "Persona que imparte justicia", "respuesta": "Juez" },
-    { "letra": "J", "tipo": "Empieza con", "definicion": "Donde se plantan flores", "respuesta": "Jardin" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Lugar donde se plantan flores", "respuesta": "Jardin" },
     { "letra": "J", "tipo": "Empieza con", "definicion": "Objeto para jugar", "respuesta": "Juguete" }
   ],
   [
     { "letra": "K", "tipo": "Empieza con", "definicion": "Mil gramos", "respuesta": "Kilo" },
     { "letra": "K", "tipo": "Empieza con", "definicion": "Arte marcial japonés", "respuesta": "Karate" },
-    { "letra": "K", "tipo": "Empieza con", "definicion": "Salsa de tomate", "respuesta": "Ketchup" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Salsa de tomate condimentada con vinagre, azúcar y especias.", "respuesta": "Ketchup" },
     { "letra": "K", "tipo": "Empieza con", "definicion": "Fruta verde con pelos", "respuesta": "Kiwi" }
   ],
   [
@@ -80,7 +79,7 @@
     { "letra": "M", "tipo": "Empieza con", "definicion": "Para comer encima", "respuesta": "Mesa" },
     { "letra": "M", "tipo": "Empieza", "definicion": "articulación que conecta la mano con el antebrazo", "respuesta": "Muñeca" },
     { "letra": "M", "tipo": "Empieza con", "definicion": "Persona que hace magia", "respuesta": "Mago" },
-    { "letra": "M", "tipo": "Contiene", "definicion": "Entorno donde compradores y vendedores interactúan para intercambiar bienes, servicios o activos", "respuesta": "Mercado" }
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Entorno donde compradores y vendedores interactúan para intercambiar bienes, servicios o activos", "respuesta": "Mercado" }
   ],
   [
     { "letra": "N", "tipo": "Empieza con", "definicion": "Masa de vapor en el cielo", "respuesta": "Nube" },
@@ -107,8 +106,7 @@
   ],
   [
     { "letra": "R", "tipo": "Empieza con", "definicion": "Flor con espinas", "respuesta": "Rosa" },
-    { "letra": "R", "tipo": "Empieza con", "definicion": "Animal que come queso", "respuesta": "Raton" },
-    { "letra": "R", "tipo": "Empieza con", "definicion": "Lugar para herramientas", "respuesta": "Cuarto" }
+    { "letra": "R", "tipo": "Empieza con", "definicion": "Animal que come queso", "respuesta": "Raton" }
   ],
   [
     { "letra": "S", "tipo": "Empieza con", "definicion": "Objeto para sentarse", "respuesta": "Silla" },
@@ -118,7 +116,7 @@
     { "letra": "S", "tipo": "Empieza con", "definicion": "Dulce horneado", "respuesta": "Pastel" }
   ],
   [
-    { "letra": "T", "tipo": "Empieza con", "definicion": "parato electrónico destinado a la recepción y reproducción de señales de televisión", "respuesta": "Televisor" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Aparato electrónico destinado a la recepción y reproducción de señales de televisión", "respuesta": "Televisor" },
     { "letra": "T", "tipo": "Empieza con", "definicion": "Fruta Roja que se utiliza en ensaladas", "respuesta": "Tomate" },
     { "letra": "T", "tipo": "Empieza con", "definicion": "Persona que viaja a un lugar diferente a su residencia habitual por motivos de placer,", "respuesta": "Turista" },
     { "letra": "T", "tipo": "Empieza con", "definicion": "Utensilio de mesa para pinchar comida", "respuesta": "Tenedor" },
