@@ -32,6 +32,26 @@ header {
     background-color: #00AEFF;
 }
 
+h2{
+    font-size: 25px;
+}
+
+.contendor-fin-juego p{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.texto-aciertos{
+    background-color: #82E0AA;
+
+}
+
+.texto-fallos{
+    background-color: #FC5F67;
+}
+
 .contenedor-abecedario{
     display: flex;
     flex-wrap: wrap;

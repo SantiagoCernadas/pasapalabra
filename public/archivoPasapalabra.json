@@ -122,8 +122,7 @@
     { "letra": "U", "tipo": "Empieza con", "definicion": "Fruta que puede ser usada para hacer vino", "respuesta": "Uva" },
     { "letra": "U", "tipo": "Contiene", "definicion": "Instrumento de viento", "respuesta": "Tuba" },
     { "letra": "U", "tipo": "Empieza con", "definicion": "Animal mitologico con un cuerno", "respuesta": "Unicornio" },
-    { "letra": "U", "tipo": "Contiene", "definicion": "Músculo del brazo", "respuesta": "Musculo" },
-    { "letra": "U", "tipo": "Empieza con", "definicion": "Herramienta útil", "respuesta": "Utensilio" }
+    { "letra": "U", "tipo": "Contiene", "definicion": "Órgano compuesto principalmente de fibras contráctiles.", "respuesta": "Musculo" }
   ],
   [
     { "letra": "V", "tipo": "Empieza con", "definicion": "Animal que da leche y su sonido caracteristico es el 'Muu' ", "respuesta": "Vaca" },

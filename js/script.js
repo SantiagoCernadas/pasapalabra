@@ -42,11 +42,11 @@ inputRespuesta.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
         if (inputRespuesta.value !== '') {
             if (respuestaCorrecta(partida.roscoPartida[partida.letraActual].respuesta, inputRespuesta.value)) {
-                partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = 'green'
+                partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#48976a'
                 partida.aciertos++;
             }
             else {
-                partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = 'red'
+                partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#7a2e32'
                 partida.fallos++;
             }
 
@@ -63,7 +63,7 @@ inputRespuesta.addEventListener('keydown', function (e) {
 })
 
 botonPasapalabra.addEventListener('click', () => {
-    partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = 'orange';
+    partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#d0a001';
     inputRespuesta.value = '';
     buscarLetraDisponible();
 })
@@ -113,7 +113,7 @@ async function iniciarPartida() {
 }
 
 function definirPalabra(letraActual) {
-    partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = 'blue';
+    partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#002F75';
     document.getElementById("texto-letra-indice").textContent = partida.roscoPartida[letraActual].tipo + " " + partida.roscoPartida[letraActual].letra;
     document.getElementById("texto-definicion").textContent = partida.roscoPartida[letraActual].definicion;
     document.getElementById("letra-actual").textContent = partida.roscoPartida[letraActual].letra;
