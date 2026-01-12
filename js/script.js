@@ -29,14 +29,12 @@ var partida = {
 botonJugar.addEventListener('click', () => {
     iniciarPartida();
     contenedorInicio.style.display = 'none';
-    contenedorPasapalabra.style.display = 'flex';
 })
 
 
 botonVolverAJugar.addEventListener('click', () => {
     iniciarPartida();
     contenedorFinPartida.style.display = 'none';
-    contenedorPasapalabra.style.display = 'flex';
 })
 
 
@@ -111,6 +109,7 @@ async function iniciarPartida() {
     partida.fallos = 0;
     inputRespuesta.value = '';
     definirPalabra(partida.letraActual);
+    contenedorPasapalabra.style.display = 'flex';
 }
 
 function definirPalabra(letraActual) {
@@ -165,9 +164,6 @@ async function generarRoscoJuego(rosco) {
         rosco[i].definicion = preguntaActual.definicion;
         rosco[i].respuesta = preguntaActual.respuesta;
     })
-
-
-    return rosco;
 }
 
 function respuestaCorrecta(palabra, respuesta) {
