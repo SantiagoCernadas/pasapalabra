@@ -1,0 +1,157 @@
+[
+  [
+    { "letra": "A", "tipo": "Empieza con", "definicion": "Insecto que produce miel", "respuesta": "Abeja" },
+    { "letra": "A", "tipo": "Empieza con", "definicion": "Vehículo que vuela", "respuesta": "Avion" },
+    { "letra": "A", "tipo": "Contiene", "definicion": "Líquido vital transparente", "respuesta": "Agua" },
+    { "letra": "A", "tipo": "Contiene", "definicion": "Fruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" }
+  ],
+  [
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Embarcación grande", "respuesta": "Barco" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Persona que apaga incendios", "respuesta": "Bombero" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Recipiente para líquidos", "respuesta": "Botella" },
+    { "letra": "B", "tipo": "Contiene", "definicion": "Utensilio para barrer", "respuesta": "Escoba" }
+  ],
+  [
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Mueble para dormir", "respuesta": "Cama" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Lugar para ver películas", "respuesta": "Cine" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Bebida negra caliente", "respuesta": "Cafe" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Dulce hecho de cacao", "respuesta": "Chocolate" }
+  ],
+  [
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Objeto cúbico para jugar y se utiliza principalmente en juegos de azar", "respuesta": "Dado" },
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Parte de la boca para morder", "respuesta": "Diente" },
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Persona que cura los dientes", "respuesta": "Dentista" },
+    { "letra": "D", "tipo": "Empieza con", "definicion": "Animal extinto que vivio en la tierra hace millones de años", "respuesta": "Dinosaurio" }
+  ],
+  [
+    { "letra": "E", "tipo": "Empieza con", "definicion": "Objeto que refleja la imagen", "respuesta": "Espejo" },
+    { "letra": "E", "tipo": "Empieza con", "definicion": "Animal con trompa", "respuesta": "Elefante" },
+    { "letra": "E", "tipo": "Contiene", "definicion": "Objeto automatico para subir y bajar pisos sin escalar", "respuesta": "Ascensor" },
+    { "letra": "E", "tipo": "Empieza con", "definicion": "Cuerpo celeste que brilla", "respuesta": "Estrella" }
+  ],
+  [
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Hacer fotos con una máquina", "respuesta": "Fotografiar" },
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Fruta dulce y roja pequeña", "respuesta": "Frutilla" },
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Persona que tiene mucha fuerza", "respuesta": "Fuerte" },
+    { "letra": "F", "tipo": "Empieza con", "definicion": "Luz y calor por combustión", "respuesta": "Fuego" }
+  ],
+  [
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Animal que maúlla", "respuesta": "Gato" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Instrumento de seis cuerdas", "respuesta": "Guitarra" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Combustible para Vehiculos", "respuesta": "Gasolina" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Persona que vigila", "respuesta": "Guardia" },
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Animal de granja que se caracteriza por poner huevos", "respuesta": "Gallina" }
+  ],
+  [
+    { "letra": "H", "tipo": "Contiene", "definicion": "Lugar donde viven hormigas", "respuesta": "Hormiguero" },
+    { "letra": "H", "tipo": "Empieza con", "definicion": "Para cortar leña", "respuesta": "Hacha" }
+  ],
+  [
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Refugio de hielo", "respuesta": "Iglu" },
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Tierra rodeada de agua", "respuesta": "Isla" },
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Objeto que atrae metales", "respuesta": "Iman" }
+  ],
+  [
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Para lavarse el cuerpo", "respuesta": "Jabon" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Animal de cuello largo", "respuesta": "Jirafa" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Persona que imparte justicia", "respuesta": "Juez" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Lugar donde se plantan flores", "respuesta": "Jardin" },
+    { "letra": "J", "tipo": "Empieza con", "definicion": "Objeto para jugar", "respuesta": "Juguete" }
+  ],
+  [
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Mil gramos", "respuesta": "Kilo" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Arte marcial japonés", "respuesta": "Karate" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Salsa de tomate condimentada con vinagre, azúcar y especias.", "respuesta": "Ketchup" },
+    { "letra": "K", "tipo": "Empieza con", "definicion": "Fruta verde con pelos", "respuesta": "Kiwi" }
+  ],
+  [
+    { "letra": "L", "tipo": "Empieza con", "definicion": "Satélite de la Tierra", "respuesta": "Luna" },
+    { "letra": "L", "tipo": "Empieza con", "definicion": "Objeto para dibujar/escribir", "respuesta": "Lapiz" },
+    { "letra": "L", "tipo": "Contiene", "definicion": "Objeto para consultar la hora", "respuesta": "Reloj" },
+    { "letra": "L", "tipo": "Empieza con", "definicion": "Animal considerado el 'Rey de la selva'", "respuesta": "Leon" },
+    { "letra": "L", "tipo": "Contiene", "definicion": "Objeto que se usa para guardar platos", "respuesta": "Vajilla" }
+  ],
+  [
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Para comer encima", "respuesta": "Mesa" },
+    { "letra": "M", "tipo": "Empieza", "definicion": "articulación que conecta la mano con el antebrazo", "respuesta": "Muñeca" },
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Persona que hace magia", "respuesta": "Mago" },
+    { "letra": "M", "tipo": "Empieza con", "definicion": "Entorno donde compradores y vendedores interactúan para intercambiar bienes, servicios o activos", "respuesta": "Mercado" }
+  ],
+  [
+    { "letra": "N", "tipo": "Empieza con", "definicion": "Masa de vapor en el cielo", "respuesta": "Nube" },
+    { "letra": "N", "tipo": "Contiene", "definicion": "Persona que viaja por el espacio", "respuesta": "Astronauta" },
+    { "letra": "N", "tipo": "Contiene", "definicion": "Vehiculo capaz de sumergirse y desplazarse bajo el agua.", "respuesta": "Submarino" },
+    { "letra": "N", "tipo": "Empieza con", "definicion": "Práctica y deporte consistentes en nadar", "respuesta": "Natacion" }
+  ],
+  [
+    { "letra": "O", "tipo": "Empieza con", "definicion": "Órgano de la visión", "respuesta": "Ojo" },
+    { "letra": "O", "tipo": "Empieza con", "definicion": "Metal precioso amarillo", "respuesta": "Oro" },
+    { "letra": "O", "tipo": "Contiene", "definicion": "Animal marino con ocho brazos", "respuesta": "Pulpo" },
+    { "letra": "O", "tipo": "Empieza con", "definicion": "Organo del sistema auditivo", "respuesta": "Oido" }
+  ],
+  [
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Animal fiel", "respuesta": "Perro" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Para protegerse de lluvia", "respuesta": "Paraguas" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Lugar con arena y mar", "respuesta": "Playa" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Objeto para aplicar pintura, barniz, o pegamento", "respuesta": "Pincel" },
+    { "letra": "P", "tipo": "Empieza con", "definicion": "Fruta en forma de bombilla; su cáscara es lisa, puede ser de color verde o amarillo.", "respuesta": "Pera" }
+  ],
+  [
+    { "letra": "Q", "tipo": "Empieza con", "definicion": "Alimento lácteo derivado de la leche", "respuesta": "Queso" },
+    { "letra": "Q", "tipo": "Contiene", "definicion": "Objeto para jugar tenis", "respuesta": "Raqueta" }
+  ],
+  [
+    { "letra": "R", "tipo": "Empieza con", "definicion": "Flor con espinas", "respuesta": "Rosa" },
+    { "letra": "R", "tipo": "Empieza con", "definicion": "Animal que come queso", "respuesta": "Raton" }
+  ],
+  [
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Objeto para sentarse", "respuesta": "Silla" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Estrella del Sistema solar", "respuesta": "Sol" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Calzado de verano", "respuesta": "Sandalia" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Condimento usado para sazonar y conservar alimentos", "respuesta": "Sal" },
+    { "letra": "S", "tipo": "Empieza con", "definicion": "Dulce horneado", "respuesta": "Pastel" }
+  ],
+  [
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Aparato electrónico destinado a la recepción y reproducción de señales de televisión", "respuesta": "Televisor" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Fruta Roja que se utiliza en ensaladas", "respuesta": "Tomate" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Persona que viaja a un lugar diferente a su residencia habitual por motivos de placer,", "respuesta": "Turista" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Utensilio de mesa para pinchar comida", "respuesta": "Tenedor" },
+    { "letra": "T", "tipo": "Empieza con", "definicion": "Animal lento con caparazón", "respuesta": "Tortuga" }
+  ],
+  [
+    { "letra": "U", "tipo": "Empieza con", "definicion": "Fruta que puede ser usada para hacer vino", "respuesta": "Uva" },
+    { "letra": "U", "tipo": "Contiene", "definicion": "Instrumento de viento", "respuesta": "Tuba" },
+    { "letra": "U", "tipo": "Empieza con", "definicion": "Animal mitologico con un cuerno", "respuesta": "Unicornio" },
+    { "letra": "U", "tipo": "Contiene", "definicion": "Órgano compuesto principalmente de fibras contráctiles.", "respuesta": "Musculo" }
+  ],
+  [
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Animal que da leche y su sonido caracteristico es el 'Muu' ", "respuesta": "Vaca" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Máquina rotativa que pone el aire, o un gas, en movimiento", "respuesta": "Ventilador" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "La estación más cálida de las cuatro estaciones del año. Se caracteriza porque los días son más largos y las noches más cortas", "respuesta": "Verano" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Persona que vive cerca de otra, en el mismo barrio, casa o pueblo", "respuesta": "Vecino" }
+  ],
+  [
+    { "letra": "W", "tipo": "Contiene", "definicion": "Fruta verde con semillas negras", "respuesta": "Kiwi" },
+    { "letra": "W", "tipo": "Empieza con", "definicion": "Deporte de agua con balón", "respuesta": "Waterpolo" },
+    { "letra": "W", "tipo": "Empieza con", "definicion": "Sistema interconectado de páginas públicas accesibles a través de Internet", "respuesta": "Web" },
+    { "letra": "W", "tipo": "Empieza con", "definicion": "Bebida alcohólica dorada", "respuesta": "Whisky" }
+  ],
+  [
+    { "letra": "X", "tipo": "Contiene", "definicion": "elemento químico esencial para la vida. Componente fundamental del proceso de respiración", "respuesta": "Oxigeno" },
+    { "letra": "X", "tipo": "Contiene", "definicion": "Transporte donde se recoge y se deja al pasajero en donde este mismo lo decida", "respuesta": "Taxi" },
+    { "letra": "X", "tipo": "Empieza con", "definicion": "Instrumento de láminas", "respuesta": "Xilofono" },
+    { "letra": "X", "tipo": "Contiene", "definicion": "Persona que viene de otro pais y no posee la nacionalidad del país donde se encuentra", "respuesta": "Extranjero" }
+  ],
+  [
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Barco de lujo", "respuesta": "Yate" },
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Parte amarilla del huevo", "respuesta": "Yema" },
+    { "letra": "Y", "tipo": "Contiene", "definicion": "Persona que usa maquillaje,pelucas y vestuario extravagante para hacer reír con sus actos, gestos y dichos", "respuesta": "Payaso" },
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Hojas secas y molidas que se usan para preparar una infusión energizante", "respuesta": "Yerba" },
+    { "letra": "Y", "tipo": "Contiene", "definicion": "Condimento espeso y blanquecino, generalmente elaborado con huevos, aceite, vinagre, limón, mostaza y condimentos.", "respuesta": "Mayonesa" }
+  ],
+  [
+    { "letra": "Z", "tipo": "Empieza con", "definicion": "Vestimenta hecha con la intención de proveer protección y comodidad al pie", "respuesta": "Zapato" },
+    { "letra": "Z", "tipo": "Empieza con", "definicion": "Verdura Naranja. Se caracteriza por ser consumida por conejos", "respuesta": "Zanahoria" },
+    { "letra": "Z", "tipo": "Contiene", "definicion": "Instalación donde se mantienen animales salvajes en cautiverio, exhibiéndolos al público para entretenimiento y educación", "respuesta": "Zoologico" }
+  ]
+]

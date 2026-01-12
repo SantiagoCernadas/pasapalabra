@@ -1,23 +1,156 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 
-header{
-    background-color: cyan;
-}
-
-.contenedor-pasapalabra{
+body{
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #74D4FF;
 }
 
-.letra{
-    background-color: green;
+header {
+    background-color: #00AEFF;
+    text-align: center;
+    width: 100%;
+}
+
+
+.contenedor-pasapalabra, .contenedor-inicio, .contendor-fin-juego{
+    margin-top: 80px;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    background-color: #00AEFF;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.contendor-fin-juego p{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.texto-aciertos{
+    background-color: #82E0AA;
+
+}
+
+.texto-fallos{
+    background-color: #FC5F67;
+}
+
+.contenedor-abecedario{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.contenedor-letra-actual{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    border: 1px solid black;
+    padding: 5px 40px;
+    width: 200px;
+    min-height: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input{
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+
+button{
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+.contenedor-inicio button, .contendor-fin-juego button{
+    background-color: #82E0AA;
+}
+
+#boton-pasapalabra{
+    background-color: #FFD230;
+}
+
+.contenedor-inicio button:hover, .contendor-fin-juego button:hover{
+    background-color: #21834B;
     color: white;
+    cursor: pointer;
+}
+
+
+#boton-pasapalabra:hover{
+    background-color: #755C00;
+    color: white;
+    cursor: pointer;
+}
+
+
+#letra-actual{
+    font-size: 25px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border: 1px solid black;
+    background-color: #0072A3;
+    width: 20px;
+    text-align: center;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+#cronometro{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    min-width: 40px;
+    text-align: center;
+    background-color: #82E0AA;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.letra {
+    display: flex;
     width: 40px;
     height: 40px;
-    text-align: center;
-    align-content: center;
-    border-radius: 50%
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #0072A3;
+    color: white;
 }
