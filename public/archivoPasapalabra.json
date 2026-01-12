@@ -40,19 +40,16 @@
     { "letra": "G", "tipo": "Empieza con", "definicion": "Instrumento de seis cuerdas", "respuesta": "Guitarra" },
     { "letra": "G", "tipo": "Empieza con", "definicion": "Combustible para Vehiculos", "respuesta": "Gasolina" },
     { "letra": "G", "tipo": "Empieza con", "definicion": "Persona que vigila", "respuesta": "Guardia" },
-    { "letra": "G", "tipo": "Empieza con", "definicion": "Ave que pone huevos", "respuesta": "Gallina" }
+    { "letra": "G", "tipo": "Empieza con", "definicion": "Animal de granja que se caracteriza por poner huevos", "respuesta": "Gallina" }
   ],
   [
-    { "letra": "H", "tipo": "Empieza con", "definicion": "Cuerpo redondeado que ponen las aves", "respuesta": "Huevo" },
     { "letra": "H", "tipo": "Contiene", "definicion": "Lugar donde viven hormigas", "respuesta": "Hormiguero" },
     { "letra": "H", "tipo": "Empieza con", "definicion": "Para cortar leña", "respuesta": "Hacha" }
   ],
   [
-    { "letra": "I", "tipo": "Empieza con", "definicion": "Casa de hielo", "respuesta": "Iglu" },
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Refugio de hielo", "respuesta": "Iglu" },
     { "letra": "I", "tipo": "Empieza con", "definicion": "Tierra rodeada de agua", "respuesta": "Isla" },
-    { "letra": "I", "tipo": "Empieza con", "definicion": "Objeto que atrae metales", "respuesta": "Iman" },
-    { "letra": "I", "tipo": "Empieza con", "definicion": "Donde se imprimen libros", "respuesta": "Imprenta" },
-    { "letra": "I", "tipo": "Empieza con", "definicion": "Hacer un dibujo", "respuesta": "Ilustrar" }
+    { "letra": "I", "tipo": "Empieza con", "definicion": "Objeto que atrae metales", "respuesta": "Iman" }
   ],
   [
     { "letra": "J", "tipo": "Empieza con", "definicion": "Para lavarse el cuerpo", "respuesta": "Jabon" },
@@ -75,7 +72,6 @@
     { "letra": "L", "tipo": "Contiene", "definicion": "Objeto que se usa para guardar platos", "respuesta": "Vajilla" }
   ],
   [
-    { "letra": "M", "tipo": "Empieza con", "definicion": "Fruta roja o verde", "respuesta": "Manzana" },
     { "letra": "M", "tipo": "Empieza con", "definicion": "Para comer encima", "respuesta": "Mesa" },
     { "letra": "M", "tipo": "Empieza", "definicion": "articulación que conecta la mano con el antebrazo", "respuesta": "Muñeca" },
     { "letra": "M", "tipo": "Empieza con", "definicion": "Persona que hace magia", "respuesta": "Mago" },
@@ -131,8 +127,8 @@
   ],
   [
     { "letra": "V", "tipo": "Empieza con", "definicion": "Animal que da leche y su sonido caracteristico es el 'Muu' ", "respuesta": "Vaca" },
-    { "letra": "V", "tipo": "Empieza con", "definicion": "Para refrescar el aire", "respuesta": "Ventilador" },
-    { "letra": "V", "tipo": "Contiene", "definicion": "Estación de calor", "respuesta": "Verano" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "Máquina rotativa que pone el aire, o un gas, en movimiento", "respuesta": "Ventilador" },
+    { "letra": "V", "tipo": "Empieza con", "definicion": "La estación más cálida de las cuatro estaciones del año. Se caracteriza porque los días son más largos y las noches más cortas", "respuesta": "Verano" },
     { "letra": "V", "tipo": "Empieza con", "definicion": "Persona que vive cerca de otra, en el mismo barrio, casa o pueblo", "respuesta": "Vecino" }
   ],
   [
@@ -151,8 +147,8 @@
     { "letra": "Y", "tipo": "Empieza con", "definicion": "Barco de lujo", "respuesta": "Yate" },
     { "letra": "Y", "tipo": "Empieza con", "definicion": "Parte amarilla del huevo", "respuesta": "Yema" },
     { "letra": "Y", "tipo": "Contiene", "definicion": "Persona que usa maquillaje,pelucas y vestuario extravagante para hacer reír con sus actos, gestos y dichos", "respuesta": "Payaso" },
-    { "letra": "Y", "tipo": "Empieza con", "definicion": "Hojas secas y molidas se usan para preparar una infusión energizante", "respuesta": "Yerba" },
-    { "letra": "Y", "tipo": "Contiene", "definicion": "Salsa blanca para ensaladas", "respuesta": "Mayonesa" }
+    { "letra": "Y", "tipo": "Empieza con", "definicion": "Hojas secas y molidas que se usan para preparar una infusión energizante", "respuesta": "Yerba" },
+    { "letra": "Y", "tipo": "Contiene", "definicion": "Condimento espeso y blanquecino, generalmente elaborado con huevos, aceite, vinagre, limón, mostaza y condimentos.", "respuesta": "Mayonesa" }
   ],
   [
     { "letra": "Z", "tipo": "Empieza con", "definicion": "Vestimenta hecha con la intención de proveer protección y comodidad al pie", "respuesta": "Zapato" },
