@@ -109,7 +109,7 @@
     { "letra": "S", "tipo": "Empieza con", "definicion": "Estrella del Sistema solar", "respuesta": "Sol" },
     { "letra": "S", "tipo": "Empieza con", "definicion": "Calzado de verano", "respuesta": "Sandalia" },
     { "letra": "S", "tipo": "Empieza con", "definicion": "Condimento usado para sazonar y conservar alimentos", "respuesta": "Sal" },
-    { "letra": "S", "tipo": "Empieza con", "definicion": "Dulce horneado", "respuesta": "Pastel" }
+    { "letra": "S", "tipo": "Contiene", "definicion": "Dulce horneado", "respuesta": "Pastel" }
   ],
   [
     { "letra": "T", "tipo": "Empieza con", "definicion": "Aparato electrónico destinado a la recepción y reproducción de señales de televisión", "respuesta": "Televisor" },
