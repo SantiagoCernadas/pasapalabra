@@ -33,6 +33,11 @@ header {
 }
 
 h2{
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #74D4FF;
+    border: 2px solid black;
+    color: black;
     font-size: 25px;
 }
 

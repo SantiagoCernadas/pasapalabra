@@ -1,6 +1,7 @@
 import * as lector from './lectorArchivo.js';
 
 const botonJugar = document.getElementById("boton-jugar");
+const botonConfiguracion = document.getElementById("boton-configuracion");
 
 const contenedorPasapalabra = document.querySelector('.contenedor-pasapalabra');
 const contenedorInicio = document.querySelector('.contenedor-inicio');
@@ -29,6 +30,10 @@ var partida = {
 botonJugar.addEventListener('click', () => {
     iniciarPartida();
     contenedorInicio.style.display = 'none';
+})
+
+botonConfiguracion.addEventListener('click', () => {
+    alert('configuracion')
 })
 
 
