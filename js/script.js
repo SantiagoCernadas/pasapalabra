@@ -1,17 +1,40 @@
 import * as lector from './lectorArchivo.js';
 
 const botonJugar = document.getElementById("boton-jugar");
+const botonConfiguracion = document.getElementById("boton-configuracion");
 
-const contenedorPasapalabra = document.querySelector('.contenedor-pasapalabra');
-const contenedorInicio = document.querySelector('.contenedor-inicio');
-const contenedorFinPartida = document.querySelector('.contendor-fin-juego');
+const contenedorInicio = document.getElementById('contenedor-inicio');
+const contenedorConfiguracion = document.getElementById('contenedor-configuracion');
+const contenedorPasapalabra = document.getElementById('contenedor-pasapalabra');
+const contenedorFinPartida = document.getElementById('contendor-fin-juego');
+
+const botonAceptarConfiguracion = document.getElementById('boton-aceptar-configuracion');
 
 const inputRespuesta = document.getElementById('input-respuesta');
 const letrasRosco = document.querySelectorAll('.letra');
+
 const botonPasapalabra = document.getElementById('boton-pasapalabra');
+
 const botonVolverAJugar = document.getElementById('volver-jugar');
+const botonVolverInicioJuego = document.getElementById('volver-inicio-juego');
 
 const cronometro = document.getElementById('cronometro');
+
+
+if(localStorage.getItem('tiempoPartida') === null){
+    localStorage.setItem('tiempoPartida',100);
+}
+
+const configTiempoPartida = document.getElementById('tiempo-partida');
+
+configTiempoPartida.value = localStorage.getItem('tiempoPartida');
+var tiempoPartida = configTiempoPartida.value;
+
+configTiempoPartida.addEventListener('change', function() {
+    localStorage.setItem('tiempoPartida',configTiempoPartida.value);
+    tiempoPartida = configTiempoPartida.value;
+});
+
 
 const letrasAbecedario = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
@@ -27,14 +50,29 @@ var partida = {
 
 
 botonJugar.addEventListener('click', () => {
-    iniciarPartida();
     contenedorInicio.style.display = 'none';
+    iniciarPartida();
+})
+
+botonConfiguracion.addEventListener('click', () => {
+    contenedorInicio.style.display = 'none';
+    contenedorConfiguracion.style.display = 'flex';
+})
+
+botonAceptarConfiguracion.addEventListener('click', () => {
+    contenedorConfiguracion.style.display = 'none';
+    contenedorInicio.style.display = 'flex';
 })
 
 
 botonVolverAJugar.addEventListener('click', () => {
     iniciarPartida();
     contenedorFinPartida.style.display = 'none';
+})
+
+botonVolverInicioJuego.addEventListener('click', () => {
+    contenedorFinPartida.style.display = 'none';
+    contenedorInicio.style.display = 'flex';
 })
 
 
@@ -129,7 +167,7 @@ function generarRosco() {
 }
 
 function iniciarTemporizador(){
-    var tiempoRestanteRosco = 100;
+    var tiempoRestanteRosco = tiempoPartida;
     cronometro.style.backgroundColor = '#82E0AA';
     cronometro.textContent = tiempoRestanteRosco;
     return setInterval(()=>{
@@ -138,16 +176,16 @@ function iniciarTemporizador(){
         if(tiempoRestanteRosco < 0){
             finPartida("Se acabo el tiempo");
         }
-        else if(tiempoRestanteRosco < 10){
+        else if(tiempoRestanteRosco / tiempoPartida < 0.1){
            cronometro.style.backgroundColor = '#C11007'; 
         }
-        else if(tiempoRestanteRosco < 25){
+        else if(tiempoRestanteRosco / tiempoPartida < 0.25){
            cronometro.style.backgroundColor = '#E1712B'; 
         }
-        else if(tiempoRestanteRosco < 50){
+        else if(tiempoRestanteRosco / tiempoPartida < 0.5){
            cronometro.style.backgroundColor = '#FFDF20'; 
         }
-        else if(tiempoRestanteRosco < 75){
+        else if(tiempoRestanteRosco / tiempoPartida < 0.75){
            cronometro.style.backgroundColor = '#9AE630'; 
         }
         

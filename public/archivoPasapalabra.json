@@ -3,19 +3,26 @@
     { "letra": "A", "tipo": "Empieza con", "definicion": "Insecto que produce miel", "respuesta": "Abeja" },
     { "letra": "A", "tipo": "Empieza con", "definicion": "Vehículo que vuela", "respuesta": "Avion" },
     { "letra": "A", "tipo": "Contiene", "definicion": "Líquido vital transparente", "respuesta": "Agua" },
-    { "letra": "A", "tipo": "Contiene", "definicion": "Fruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" }
+    { "letra": "A", "tipo": "Contiene", "definicion": "Fruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" },
+    { "letra": "A", "tipo": "Contiene", "definicion": "Aparato que sirve para tomar fotos o grabar videos", "respuesta": "Cámara" },
+    { "letra": "A", "tipo": "Contiene", "definicion": "Bolsa para llevar cosas en la espalda.", "respuesta": "Mochila" }
   ],
   [
     { "letra": "B", "tipo": "Empieza con", "definicion": "Embarcación grande", "respuesta": "Barco" },
     { "letra": "B", "tipo": "Empieza con", "definicion": "Persona que apaga incendios", "respuesta": "Bombero" },
     { "letra": "B", "tipo": "Empieza con", "definicion": "Recipiente para líquidos", "respuesta": "Botella" },
-    { "letra": "B", "tipo": "Contiene", "definicion": "Utensilio para barrer", "respuesta": "Escoba" }
+    { "letra": "B", "tipo": "Contiene", "definicion": "Utensilio para barrer", "respuesta": "Escoba" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Residuo inservible, o todo material no deseado y del que se tiene intención de desechar", "respuesta": "Basura" },
+    { "letra": "B", "tipo": "Empieza con", "definicion": "Objeto de bolsillo para llevar billetes, monedas y tarjetas de forma física.", "respuesta": "Billetera" }
   ],
   [
     { "letra": "C", "tipo": "Empieza con", "definicion": "Mueble para dormir", "respuesta": "Cama" },
     { "letra": "C", "tipo": "Empieza con", "definicion": "Lugar para ver películas", "respuesta": "Cine" },
     { "letra": "C", "tipo": "Empieza con", "definicion": "Bebida negra caliente", "respuesta": "Cafe" },
-    { "letra": "C", "tipo": "Empieza con", "definicion": "Dulce hecho de cacao", "respuesta": "Chocolate" }
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Dulce hecho de cacao y azucar", "respuesta": "Chocolate" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Elemento organizativo para guardar papeles importantes", "respuesta": "Carpeta" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Recipiente (de madera, cartón, metal,etc) con tapa para guardar cosas", "respuesta": "Caja" },
+    { "letra": "C", "tipo": "Empieza con", "definicion": "Tejido animal, principalmente muscular, que se consume como alimento por parte de algunos seres vivos.", "respuesta": "Carne" }
   ],
   [
     { "letra": "D", "tipo": "Empieza con", "definicion": "Objeto cúbico para jugar y se utiliza principalmente en juegos de azar", "respuesta": "Dado" },
@@ -30,7 +37,6 @@
     { "letra": "E", "tipo": "Empieza con", "definicion": "Cuerpo celeste que brilla", "respuesta": "Estrella" }
   ],
   [
-    { "letra": "F", "tipo": "Empieza con", "definicion": "Hacer fotos con una máquina", "respuesta": "Fotografiar" },
     { "letra": "F", "tipo": "Empieza con", "definicion": "Fruta dulce y roja pequeña", "respuesta": "Frutilla" },
     { "letra": "F", "tipo": "Empieza con", "definicion": "Persona que tiene mucha fuerza", "respuesta": "Fuerte" },
     { "letra": "F", "tipo": "Empieza con", "definicion": "Luz y calor por combustión", "respuesta": "Fuego" }
@@ -44,7 +50,7 @@
   ],
   [
     { "letra": "H", "tipo": "Contiene", "definicion": "Lugar donde viven hormigas", "respuesta": "Hormiguero" },
-    { "letra": "H", "tipo": "Empieza con", "definicion": "Para cortar leña", "respuesta": "Hacha" }
+    { "letra": "H", "tipo": "Empieza con", "definicion": "Objeto para cortar leña", "respuesta": "Hacha" }
   ],
   [
     { "letra": "I", "tipo": "Empieza con", "definicion": "Refugio de hielo", "respuesta": "Iglu" },
@@ -109,7 +115,7 @@
     { "letra": "S", "tipo": "Empieza con", "definicion": "Estrella del Sistema solar", "respuesta": "Sol" },
     { "letra": "S", "tipo": "Empieza con", "definicion": "Calzado de verano", "respuesta": "Sandalia" },
     { "letra": "S", "tipo": "Empieza con", "definicion": "Condimento usado para sazonar y conservar alimentos", "respuesta": "Sal" },
-    { "letra": "S", "tipo": "Empieza con", "definicion": "Dulce horneado", "respuesta": "Pastel" }
+    { "letra": "S", "tipo": "Contiene", "definicion": "Dulce horneado", "respuesta": "Pastel" }
   ],
   [
     { "letra": "T", "tipo": "Empieza con", "definicion": "Aparato electrónico destinado a la recepción y reproducción de señales de televisión", "respuesta": "Televisor" },
