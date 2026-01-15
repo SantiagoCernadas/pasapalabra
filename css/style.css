@@ -19,7 +19,7 @@ header {
 }
 
 
-.contenedor-pasapalabra, .contenedor-inicio, .contendor-fin-juego{
+.contenedor{
     margin-top: 80px;
     border: 3px solid black;
     padding: 20px;
@@ -41,7 +41,7 @@ h2{
     font-size: 25px;
 }
 
-.contendor-fin-juego p{
+.contenedor p{
     font-size: 18px;
     padding: 5px;
     border-radius: 5px;
@@ -64,13 +64,12 @@ h2{
     align-items: center;
 }
 
-.contenedor-letra-actual{
+#contenedor-letra-actual{
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 4px;
     border: 1px solid black;
     padding: 5px 40px;
     width: 200px;
@@ -97,7 +96,7 @@ button{
     color: black;
 }
 
-.contenedor-inicio button, .contendor-fin-juego button{
+.contenedor button{
     background-color: #82E0AA;
 }
 
@@ -105,7 +104,7 @@ button{
     background-color: #FFD230;
 }
 
-.contenedor-inicio button:hover, .contendor-fin-juego button:hover{
+.contenedor button:hover{
     background-color: #21834B;
     color: white;
     cursor: pointer;
@@ -159,3 +158,22 @@ button{
     background-color: #0072A3;
     color: white;
 }
+
+.contenedor-configuracion-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-configuracion-input{
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #74D4FF;
+    border: 2px solid black;
+    color: black;
+}
+
+select{
+    font-size: 16px;
+}
+

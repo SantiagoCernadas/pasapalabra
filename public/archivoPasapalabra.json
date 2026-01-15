@@ -3,7 +3,8 @@
     { "letra": "A", "tipo": "Empieza con", "definicion": "Insecto que produce miel", "respuesta": "Abeja" },
     { "letra": "A", "tipo": "Empieza con", "definicion": "Vehículo que vuela", "respuesta": "Avion" },
     { "letra": "A", "tipo": "Contiene", "definicion": "Líquido vital transparente", "respuesta": "Agua" },
-    { "letra": "A", "tipo": "Contiene", "definicion": "Fruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" }
+    { "letra": "A", "tipo": "Contiene", "definicion": "Fruta cítrica popular, dulce y jugosa, conocida por su alto contenido de vitamina C, antioxidantes, fibra y potasio", "respuesta": "Naranja" },
+    { "letra": "A", "tipo": "Contiene", "definicion": "Aparato que sirve para tomar fotos o grabar videos", "respuesta": "Cámara" }
   ],
   [
     { "letra": "B", "tipo": "Empieza con", "definicion": "Embarcación grande", "respuesta": "Barco" },
@@ -30,7 +31,6 @@
     { "letra": "E", "tipo": "Empieza con", "definicion": "Cuerpo celeste que brilla", "respuesta": "Estrella" }
   ],
   [
-    { "letra": "F", "tipo": "Empieza con", "definicion": "Hacer fotos con una máquina", "respuesta": "Fotografiar" },
     { "letra": "F", "tipo": "Empieza con", "definicion": "Fruta dulce y roja pequeña", "respuesta": "Frutilla" },
     { "letra": "F", "tipo": "Empieza con", "definicion": "Persona que tiene mucha fuerza", "respuesta": "Fuerte" },
     { "letra": "F", "tipo": "Empieza con", "definicion": "Luz y calor por combustión", "respuesta": "Fuego" }

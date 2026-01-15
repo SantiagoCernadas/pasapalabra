@@ -3,16 +3,21 @@ import * as lector from './lectorArchivo.js';
 const botonJugar = document.getElementById("boton-jugar");
 const botonConfiguracion = document.getElementById("boton-configuracion");
 
-const contenedorPasapalabra = document.querySelector('.contenedor-pasapalabra');
-const contenedorInicio = document.querySelector('.contenedor-inicio');
-const contenedorFinPartida = document.querySelector('.contendor-fin-juego');
+const contenedorPasapalabra = document.getElementById('contenedor-pasapalabra');
+const contenedorInicio = document.getElementById('contenedor-inicio');
+const contenedorFinPartida = document.getElementById('contendor-fin-juego');
 
 const inputRespuesta = document.getElementById('input-respuesta');
 const letrasRosco = document.querySelectorAll('.letra');
+
 const botonPasapalabra = document.getElementById('boton-pasapalabra');
+
 const botonVolverAJugar = document.getElementById('volver-jugar');
+const botonVolverInicioJuego = document.getElementById('volver-inicio-juego');
 
 const cronometro = document.getElementById('cronometro');
+
+
 
 const letrasAbecedario = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
@@ -40,6 +45,11 @@ botonConfiguracion.addEventListener('click', () => {
 botonVolverAJugar.addEventListener('click', () => {
     iniciarPartida();
     contenedorFinPartida.style.display = 'none';
+})
+
+botonVolverInicioJuego.addEventListener('click', () => {
+    contenedorFinPartida.style.display = 'none';
+    contenedorInicio.style.display = 'flex';
 })
 
 

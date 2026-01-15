@@ -14,13 +14,13 @@
     </header>
     <main>
 
-        <div class="contenedor-inicio">
+        <div class="contenedor" id="contenedor-inicio">
             <h2>Menu Principal</h2>
             <button id="boton-jugar">Jugar</button>
             <button id="boton-configuracion">Configuracion</button>
         </div>
 
-        <div class="contenedor-pasapalabra" style="display: none;">
+        <div class="contenedor" id="contenedor-pasapalabra" style="display: none;">
             <div class="contenedor-abecedario">
                 <div class="letra">
                     <p>A</p>
@@ -107,19 +107,36 @@
             <button id="boton-pasapalabra">Pasapalabra</button>
 
 
-            <div class="contenedor-letra-actual">
+            <div id="contenedor-letra-actual">
                 <p id="letra-actual">A</p>
                 <p id="cronometro">100</p>
                 <p id="texto-letra-indice">Empieza con A</p>
                 <p id="texto-definicion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rem!</p>
             </div>
         </div>
-        <div class="contendor-fin-juego" style="display: none;">
+        <div class="contenedor" id="contendor-fin-juego" style="display: none;">
             <h2>Fin de la partida.</h2>
             <p id="razon-fin">Razon fin</p>
             <p class="texto-aciertos">Aciertos: <span id="texto-aciertos">0</span></p>
             <p class="texto-fallos">Fallos: <span id="texto-fallos">0</span></p>
             <button id="volver-jugar">Volver a jugar</button>
+            <button id="volver-inicio-juego">Volver al menu principal</button>
+        </div>
+
+        <div class="contenedor" id="contenedor-configuracion">
+            <h2>Configuración</h2>
+            <div class="contenedor-configuracion-input" id="Configuracion-tiempo">
+                <p>Tiempo de partida</p>
+                <select name="tiempo" id="tiempo-partida">
+                    <option value="80">80 segundos</option>
+                    <option value="100">100 segundos</option>
+                    <option value="120">120 segundos</option>
+                    <option value="150">150 segundos</option>
+                    <option value="150">200 segundos</option>
+                </select>
+            </div>
+
+            <button>Aceptar</button>
         </div>
     </main>
 
