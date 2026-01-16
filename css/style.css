@@ -98,7 +98,7 @@ button{
 }
 
 #boton-pasapalabra{
-    background-color: #FFD230;
+    background-color: #FFDF20;
 }
 
 .contenedor button:hover{
@@ -180,6 +180,38 @@ button{
     background-color: #74D4FF;
     border: 2px solid black;
     color: black;
+}
+
+.contenedor-respuestas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-wrap: break-word;
+    gap: 5px;
+}
+
+.contenedor-letra-respuesta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 90px;
+    min-width: 90px;
+    border-radius: 10px;
+    background-color: #82E0AA;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.respuesta-letra{
+    font-size: 20px !important;
+}
+
+.respuesta-palabra{
+    font-size: 14px !important;
+}
+
+.contenedor-letra-respuesta p{
+    font-size: 12px;
 }
 
 select{

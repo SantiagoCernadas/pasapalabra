@@ -81,6 +81,7 @@ inputRespuesta.addEventListener('keydown', function (e) {
         if (inputRespuesta.value !== '') {
             if (respuestaCorrecta(partida.roscoPartida[partida.letraActual].respuesta, inputRespuesta.value)) {
                 partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#48976a'
+                partida.roscoPartida[partida.letraActual].respondidaCorrectamente = true;
                 partida.aciertos++;
             }
             else {
@@ -130,10 +131,49 @@ function finPartida(mensaje){
     document.getElementById('razon-fin').textContent = mensaje;
     document.getElementById('texto-aciertos').textContent = partida.aciertos;
     document.getElementById('texto-fallos').textContent = partida.fallos;
+    generarEstadistica();
     contenedorPasapalabra.style.display = 'none';
     contenedorFinPartida.style.display = 'flex';
 }
 
+function generarEstadistica(){
+    const contenedorRespuestas = document.querySelector('.contenedor-respuestas');
+    contenedorRespuestas.innerHTML = '';
+    partida.roscoPartida.forEach((e, i) => {
+        const contenedorLetraRespuesta = document.createElement('div');
+        contenedorLetraRespuesta.classList.add('contenedor-letra-respuesta');
+        const letra = document.createElement('p');
+        letra.classList.add('respuesta-letra');
+        letra.textContent = e.letra;
+
+        const definicion = document.createElement('p');
+
+        definicion.classList.add('respuesta-definicion');
+        definicion.textContent = e.definicion
+
+        const respuesta = document.createElement('p');
+        respuesta.classList.add('respuesta-palabra');
+        respuesta.textContent = e.respuesta;
+
+        contenedorLetraRespuesta.appendChild(letra);
+        contenedorLetraRespuesta.appendChild(definicion);
+        contenedorLetraRespuesta.appendChild(respuesta);
+
+        if(!e.respondida){
+            contenedorLetraRespuesta.style.backgroundColor = '#FFDF20'
+        }
+        else{
+            if(e.respondidaCorrectamente){
+                contenedorLetraRespuesta.style.backgroundColor = '#82E0AA'
+            }
+            else{
+                contenedorLetraRespuesta.style.backgroundColor = '#FC5F67'
+            }
+        }
+
+        contenedorRespuestas.appendChild(contenedorLetraRespuesta);
+    })
+}
 
 async function iniciarPartida() {
 
@@ -160,7 +200,7 @@ function definirPalabra(letraActual) {
 function generarRosco() {
     var rosco = [];
     letrasAbecedario.forEach((e, i) => {
-        rosco.push({ letraHTML: letrasRosco[i], letra: e, tipo: '', definicion: '', respuesta: '', respondida: false });
+        rosco.push({ letraHTML: letrasRosco[i], letra: e, tipo: '', definicion: '', respuesta: '', respondida: false,respondidaCorrectamente:false });
         letrasRosco[i].style.backgroundColor  = '#0072A3'
     })
     return rosco;
