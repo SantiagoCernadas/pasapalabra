@@ -10,6 +10,10 @@ const contenedorFinPartida = document.getElementById('contendor-fin-juego');
 
 const botonAceptarConfiguracion = document.getElementById('boton-aceptar-configuracion');
 
+
+const dialogContenedorDetalles = document.getElementById('dialog-respuesta-detalles');
+dialogContenedorDetalles.showModal();
+
 const inputRespuesta = document.getElementById('input-respuesta');
 const letrasRosco = document.querySelectorAll('.letra');
 

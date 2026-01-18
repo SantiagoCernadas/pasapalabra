@@ -32,6 +32,19 @@ header {
     background-color: #00AEFF;
 }
 
+.contenedor-dialog{
+    border: 3px solid black;
+    padding: 50px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    position: relative;
+    background-color: #00AEFF;
+}
+
 h2{
     padding: 10px 50px;
     border-radius: 5px;
@@ -89,7 +102,7 @@ button{
     font-size: 20px;
     border: 2px solid white;
     padding: 8px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
 }
 
@@ -218,3 +231,24 @@ select{
     font-size: 16px;
 }
 
+dialog {
+    border: none;
+    place-self: center;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.493);
+}
+
+dialog button{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #FC5F67;
+    padding: 8px 12px;
+    border-radius: 15px;
+}
