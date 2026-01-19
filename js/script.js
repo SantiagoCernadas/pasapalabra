@@ -14,7 +14,7 @@ const botonAceptarConfiguracion = document.getElementById('boton-aceptar-configu
 const dialogContenedorDetalles = document.getElementById('dialog-respuesta-detalles');
 const botonCerrarContenedorDetalles = document.getElementById('boton-dialog-cerrar');
 
-dialogContenedorDetalles.showModal();
+
 
 botonCerrarContenedorDetalles.addEventListener('click',() =>{
     dialogContenedorDetalles.close();
@@ -158,11 +158,17 @@ function generarEstadistica(){
         letra.textContent = e.letra;
 
         const verDetalle = document.createElement('p');
-        verDetalle.textContent = 'Click para ver más'
+        verDetalle.textContent = 'Click para ver'
         
 
         contenedorLetraRespuesta.appendChild(letra);
         contenedorLetraRespuesta.appendChild(verDetalle);
+        contenedorLetraRespuesta.addEventListener('click',() => {
+            document.getElementById('texto-respuesta-indice').textContent = e.tipo +' ' + e.letra;
+            document.getElementById('texto-respuesta-definicion').textContent = e.definicion;
+            document.getElementById('texto-respuesta-correcta').textContent = e.respuesta;
+            dialogContenedorDetalles.showModal();
+        })
 
 
 

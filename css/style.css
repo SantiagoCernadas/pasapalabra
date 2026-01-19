@@ -228,10 +228,6 @@ button:hover{
     font-size: 20px !important;
 }
 
-.respuesta-palabra{
-    font-size: 14px !important;
-}
-
 .contenedor-letra-respuesta p{
     font-size: 14px;
 }
@@ -260,7 +256,7 @@ dialog button{
     background-color: #FC5F67;
     border: 2px solid black;
     padding: 8px 12px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 dialog button:hover{
