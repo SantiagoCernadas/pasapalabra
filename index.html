@@ -102,8 +102,8 @@
                 </div>
             </div>
 
-            <input type="text" name="" id="input-respuesta" placeholder="Escriba su respuesta y presione 'Enter'"
-                autocomplete="off">
+            <input type="text" name="" id="input-respuesta" maxlength="15"
+                placeholder="Escriba su respuesta y presione 'Enter'" autocomplete="off">
             <button id="boton-pasapalabra">Pasapalabra</button>
 
 
@@ -146,9 +146,21 @@
     <dialog id="dialog-respuesta-detalles">
         <div class="contenedor-dialog">
             <h2 id="texto-respuesta-indice">Empieza con A</h2>
-            <p>Definición: <span id="texto-respuesta-definicion"></span></p>
-            <p>Respuesta: <span id="texto-respuesta-correcta">RepuestaCorrecta</span></p>
+            <div class="contenedor-div-dialog">
+                <p>---Definición---</p>
+                <p id="texto-respuesta-definicion"></p>
+            </div>
+            <div class="contenedor-div-dialog">
+                <p>---Respuesta Correcta---</p>
+                <p id="texto-respuesta-correcta">RepuestaCorrecta</p>
+            </div>
+            <div class="contenedor-div-dialog">
+                <p>---Tu Respuesta---</p>
+                <p id="texto-respuesta-usuario">TuRespuesta</p>
+            </div>
+
             <button id="boton-dialog-cerrar">X</button>
+
         </div>
     </dialog>
 

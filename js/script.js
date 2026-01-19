@@ -47,6 +47,7 @@ configTiempoPartida.addEventListener('change', function() {
 
 
 const letrasAbecedario = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var respuestasUsuario;
 
 var temporizador;
 
@@ -98,7 +99,7 @@ inputRespuesta.addEventListener('keydown', function (e) {
                 partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#7a2e32'
                 partida.fallos++;
             }
-
+            respuestasUsuario[partida.letraActual] = inputRespuesta.value;
             partida.roscoPartida[partida.letraActual].respondida = true;
             if (todasRespondidas()) {
                 finPartida("Se completo el rosco");
@@ -167,6 +168,7 @@ function generarEstadistica(){
             document.getElementById('texto-respuesta-indice').textContent = e.tipo +' ' + e.letra;
             document.getElementById('texto-respuesta-definicion').textContent = e.definicion;
             document.getElementById('texto-respuesta-correcta').textContent = e.respuesta;
+            document.getElementById('texto-respuesta-usuario').textContent = respuestasUsuario[i] !== '' ? respuestasUsuario[i] : 'Sin responder'
             dialogContenedorDetalles.showModal();
         })
 
@@ -195,6 +197,7 @@ async function iniciarPartida() {
     partida.roscoPartida = generarRosco();
     await generarRoscoJuego(partida.roscoPartida);
     partida.letrasRestantes = 26;
+    respuestasUsuario = vaciarRespuestasUsuario();
     partida.letraActual = 0;
     partida.aciertos = 0;
     partida.fallos = 0;
@@ -217,6 +220,14 @@ function generarRosco() {
         letrasRosco[i].style.backgroundColor  = '#0072A3'
     })
     return rosco;
+}
+
+function vaciarRespuestasUsuario(){
+    var listaVacia = [];
+    letrasAbecedario.forEach((e, i) => {
+        listaVacia.push('');
+    })
+    return listaVacia;
 }
 
 function iniciarTemporizador(){
