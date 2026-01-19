@@ -100,10 +100,16 @@ input{
 
 button{
     font-size: 20px;
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 8px 20px;
     border-radius: 10px;
     color: black;
+}
+
+button:hover{
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
 }
 
 .contenedor button{
@@ -116,8 +122,6 @@ button{
 
 .contenedor button:hover{
     background-color: #21834B;
-    color: white;
-    cursor: pointer;
 }
 
 
@@ -207,12 +211,17 @@ button{
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 90px;
-    min-width: 90px;
+    max-width: 50px;
+    min-width: 70px;
     border-radius: 10px;
-    background-color: #82E0AA;
     border: 1px solid black;
     justify-content: space-between;
+}
+
+.contenedor-letra-respuesta:hover{
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
 }
 
 .respuesta-letra{
@@ -224,7 +233,7 @@ button{
 }
 
 .contenedor-letra-respuesta p{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 select{
@@ -249,6 +258,14 @@ dialog button{
     top: 4px;
     left: 4px;
     background-color: #FC5F67;
+    border: 2px solid black;
     padding: 8px 12px;
-    border-radius: 15px;
+    border-radius: 20px;
+}
+
+dialog button:hover{
+    cursor: pointer;
+    background-color: #972127;
+    border: 2px solid white;
+    color: white;
 }

@@ -12,7 +12,13 @@ const botonAceptarConfiguracion = document.getElementById('boton-aceptar-configu
 
 
 const dialogContenedorDetalles = document.getElementById('dialog-respuesta-detalles');
+const botonCerrarContenedorDetalles = document.getElementById('boton-dialog-cerrar');
+
 dialogContenedorDetalles.showModal();
+
+botonCerrarContenedorDetalles.addEventListener('click',() =>{
+    dialogContenedorDetalles.close();
+});
 
 const inputRespuesta = document.getElementById('input-respuesta');
 const letrasRosco = document.querySelectorAll('.letra');
@@ -146,22 +152,19 @@ function generarEstadistica(){
     partida.roscoPartida.forEach((e, i) => {
         const contenedorLetraRespuesta = document.createElement('div');
         contenedorLetraRespuesta.classList.add('contenedor-letra-respuesta');
+
         const letra = document.createElement('p');
         letra.classList.add('respuesta-letra');
         letra.textContent = e.letra;
 
-        const definicion = document.createElement('p');
-
-        definicion.classList.add('respuesta-definicion');
-        definicion.textContent = e.definicion
-
-        const respuesta = document.createElement('p');
-        respuesta.classList.add('respuesta-palabra');
-        respuesta.textContent = e.respuesta;
+        const verDetalle = document.createElement('p');
+        verDetalle.textContent = 'Click para ver más'
+        
 
         contenedorLetraRespuesta.appendChild(letra);
-        contenedorLetraRespuesta.appendChild(definicion);
-        contenedorLetraRespuesta.appendChild(respuesta);
+        contenedorLetraRespuesta.appendChild(verDetalle);
+
+
 
         if(!e.respondida){
             contenedorLetraRespuesta.style.backgroundColor = '#FFDF20'
