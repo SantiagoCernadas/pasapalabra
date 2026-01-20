@@ -277,6 +277,10 @@ dialog button:hover{
     width: 80%;
 }
 
+.respuesta-correcta{
+    background-color: #82E0AA;
+}
+
 .respuestas{
     display: flex;
     gap: 10px;
