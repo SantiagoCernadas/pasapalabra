@@ -102,8 +102,8 @@
                 </div>
             </div>
 
-            <input type="text" name="" id="input-respuesta" placeholder="Escriba su respuesta y presione 'Enter'"
-                autocomplete="off">
+            <input type="text" name="" id="input-respuesta" maxlength="15"
+                placeholder="Escriba su respuesta y presione 'Enter'" autocomplete="off">
             <button id="boton-pasapalabra">Pasapalabra</button>
 
 
@@ -121,6 +121,9 @@
             <p class="texto-fallos">Fallos: <span id="texto-fallos">0</span></p>
             <button id="volver-jugar">Volver a jugar</button>
             <button id="volver-inicio-juego">Volver al menu principal</button>
+            <div class="contenedor-respuestas">
+
+            </div>
         </div>
 
         <div class="contenedor" id="contenedor-configuracion" style="display: none;">
@@ -139,6 +142,27 @@
             <button id="boton-aceptar-configuracion">Aceptar</button>
         </div>
     </main>
+
+    <dialog id="dialog-respuesta-detalles">
+        <div class="contenedor-dialog">
+            <h2 id="texto-respuesta-indice">Empieza con A</h2>
+            <div class="contenedor-div-dialog">
+                <p>---Definición---</p>
+                <p id="texto-respuesta-definicion"></p>
+            </div>
+            <div class="contenedor-div-dialog respuesta-correcta">
+                <p>---Respuesta Correcta---</p>
+                <p id="texto-respuesta-correcta">RepuestaCorrecta</p>
+            </div>
+            <div class="contenedor-div-dialog respuesta-usuario">
+                <p>---Tu Respuesta---</p>
+                <p id="texto-respuesta-usuario">TuRespuesta</p>
+            </div>
+
+            <button id="boton-dialog-cerrar">X</button>
+
+        </div>
+    </dialog>
 
     <footer>Santiago Nicolas Cernadas 2026</footer>
 

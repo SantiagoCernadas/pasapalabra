@@ -32,6 +32,19 @@ header {
     background-color: #00AEFF;
 }
 
+.contenedor-dialog{
+    border: 3px solid black;
+    padding: 50px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    position: relative;
+    background-color: #00AEFF;
+}
+
 h2{
     padding: 10px 50px;
     border-radius: 5px;
@@ -87,10 +100,16 @@ input{
 
 button{
     font-size: 20px;
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 8px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
+}
+
+button:hover{
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
 }
 
 .contenedor button{
@@ -98,13 +117,11 @@ button{
 }
 
 #boton-pasapalabra{
-    background-color: #FFD230;
+    background-color: #FFDF20;
 }
 
 .contenedor button:hover{
     background-color: #21834B;
-    color: white;
-    cursor: pointer;
 }
 
 
@@ -182,7 +199,89 @@ button{
     color: black;
 }
 
+.contenedor-respuestas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-wrap: break-word;
+    gap: 5px;
+}
+
+.contenedor-letra-respuesta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 50px;
+    min-width: 70px;
+    border-radius: 10px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.contenedor-letra-respuesta:hover{
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+
+.respuesta-letra{
+    font-size: 20px !important;
+}
+
+.contenedor-letra-respuesta p{
+    font-size: 14px;
+}
+
 select{
     font-size: 16px;
 }
 
+dialog {
+    border: none;
+    place-self: center;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.493);
+}
+
+dialog button{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #FC5F67;
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+dialog button:hover{
+    cursor: pointer;
+    background-color: #972127;
+    border: 2px solid white;
+    color: white;
+}
+
+.contenedor-div-dialog{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #74D4FF;
+    border: 2px solid black;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+}
+
+.respuesta-correcta{
+    background-color: #82E0AA;
+}
+
+.respuestas{
+    display: flex;
+    gap: 10px;
+}

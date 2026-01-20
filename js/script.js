@@ -10,6 +10,16 @@ const contenedorFinPartida = document.getElementById('contendor-fin-juego');
 
 const botonAceptarConfiguracion = document.getElementById('boton-aceptar-configuracion');
 
+
+const dialogContenedorDetalles = document.getElementById('dialog-respuesta-detalles');
+const botonCerrarContenedorDetalles = document.getElementById('boton-dialog-cerrar');
+
+
+
+botonCerrarContenedorDetalles.addEventListener('click', () => {
+    dialogContenedorDetalles.close();
+});
+
 const inputRespuesta = document.getElementById('input-respuesta');
 const letrasRosco = document.querySelectorAll('.letra');
 
@@ -21,8 +31,8 @@ const botonVolverInicioJuego = document.getElementById('volver-inicio-juego');
 const cronometro = document.getElementById('cronometro');
 
 
-if(localStorage.getItem('tiempoPartida') === null){
-    localStorage.setItem('tiempoPartida',100);
+if (localStorage.getItem('tiempoPartida') === null) {
+    localStorage.setItem('tiempoPartida', 100);
 }
 
 const configTiempoPartida = document.getElementById('tiempo-partida');
@@ -30,13 +40,14 @@ const configTiempoPartida = document.getElementById('tiempo-partida');
 configTiempoPartida.value = localStorage.getItem('tiempoPartida');
 var tiempoPartida = configTiempoPartida.value;
 
-configTiempoPartida.addEventListener('change', function() {
-    localStorage.setItem('tiempoPartida',configTiempoPartida.value);
+configTiempoPartida.addEventListener('change', function () {
+    localStorage.setItem('tiempoPartida', configTiempoPartida.value);
     tiempoPartida = configTiempoPartida.value;
 });
 
 
 const letrasAbecedario = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var respuestasUsuario;
 
 var temporizador;
 
@@ -81,13 +92,14 @@ inputRespuesta.addEventListener('keydown', function (e) {
         if (inputRespuesta.value !== '') {
             if (respuestaCorrecta(partida.roscoPartida[partida.letraActual].respuesta, inputRespuesta.value)) {
                 partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#48976a'
+                partida.roscoPartida[partida.letraActual].respondidaCorrectamente = true;
                 partida.aciertos++;
             }
             else {
                 partida.roscoPartida[partida.letraActual].letraHTML.style.backgroundColor = '#7a2e32'
                 partida.fallos++;
             }
-
+            respuestasUsuario[partida.letraActual] = inputRespuesta.value;
             partida.roscoPartida[partida.letraActual].respondida = true;
             if (todasRespondidas()) {
                 finPartida("Se completo el rosco");
@@ -106,7 +118,7 @@ botonPasapalabra.addEventListener('click', () => {
     buscarLetraDisponible();
 })
 
-function todasRespondidas(){
+function todasRespondidas() {
     var cantLetrasRespondidas = partida.aciertos + partida.fallos;
     return cantLetrasRespondidas == 26;
 }
@@ -125,15 +137,70 @@ function buscarLetraDisponible() {
     definirPalabra(partida.letraActual);
 }
 
-function finPartida(mensaje){
+function finPartida(mensaje) {
     clearInterval(temporizador);
     document.getElementById('razon-fin').textContent = mensaje;
     document.getElementById('texto-aciertos').textContent = partida.aciertos;
     document.getElementById('texto-fallos').textContent = partida.fallos;
+    generarEstadistica();
     contenedorPasapalabra.style.display = 'none';
     contenedorFinPartida.style.display = 'flex';
 }
 
+function generarEstadistica() {
+    const contenedorRespuestas = document.querySelector('.contenedor-respuestas');
+    contenedorRespuestas.innerHTML = '';
+    partida.roscoPartida.forEach((e, i) => {
+        const contenedorLetraRespuesta = document.createElement('div');
+        contenedorLetraRespuesta.classList.add('contenedor-letra-respuesta');
+
+        const letra = document.createElement('p');
+        letra.classList.add('respuesta-letra');
+        letra.textContent = e.letra;
+
+        const verDetalle = document.createElement('p');
+        verDetalle.textContent = 'Click para ver'
+
+
+        contenedorLetraRespuesta.appendChild(letra);
+        contenedorLetraRespuesta.appendChild(verDetalle);
+        contenedorLetraRespuesta.addEventListener('click', () => {
+            document.getElementById('texto-respuesta-indice').textContent = e.tipo + ' ' + e.letra;
+            document.getElementById('texto-respuesta-definicion').textContent = e.definicion;
+            document.getElementById('texto-respuesta-correcta').textContent = e.respuesta;
+            if (!e.respondida) {
+                document.getElementById('texto-respuesta-usuario').textContent = 'Sin responder';
+                document.querySelector('.respuesta-usuario').style.backgroundColor = '#FFDF20'
+            }
+            else {
+                document.getElementById('texto-respuesta-usuario').textContent = respuestasUsuario[i];
+                if (e.respondidaCorrectamente) {
+                    document.querySelector('.respuesta-usuario').style.backgroundColor = '#82E0AA'
+                }
+                else {
+                    document.querySelector('.respuesta-usuario').style.backgroundColor = '#FC5F67'
+                }
+            }
+            dialogContenedorDetalles.showModal();
+        })
+
+
+
+        if (!e.respondida) {
+            contenedorLetraRespuesta.style.backgroundColor = '#FFDF20'
+        }
+        else {
+            if (e.respondidaCorrectamente) {
+                contenedorLetraRespuesta.style.backgroundColor = '#82E0AA'
+            }
+            else {
+                contenedorLetraRespuesta.style.backgroundColor = '#FC5F67'
+            }
+        }
+
+        contenedorRespuestas.appendChild(contenedorLetraRespuesta);
+    })
+}
 
 async function iniciarPartida() {
 
@@ -142,6 +209,7 @@ async function iniciarPartida() {
     partida.roscoPartida = generarRosco();
     await generarRoscoJuego(partida.roscoPartida);
     partida.letrasRestantes = 26;
+    respuestasUsuario = vaciarRespuestasUsuario();
     partida.letraActual = 0;
     partida.aciertos = 0;
     partida.fallos = 0;
@@ -160,36 +228,44 @@ function definirPalabra(letraActual) {
 function generarRosco() {
     var rosco = [];
     letrasAbecedario.forEach((e, i) => {
-        rosco.push({ letraHTML: letrasRosco[i], letra: e, tipo: '', definicion: '', respuesta: '', respondida: false });
-        letrasRosco[i].style.backgroundColor  = '#0072A3'
+        rosco.push({ letraHTML: letrasRosco[i], letra: e, tipo: '', definicion: '', respuesta: '', respondida: false, respondidaCorrectamente: false });
+        letrasRosco[i].style.backgroundColor = '#0072A3'
     })
     return rosco;
 }
 
-function iniciarTemporizador(){
+function vaciarRespuestasUsuario() {
+    var listaVacia = [];
+    letrasAbecedario.forEach((e, i) => {
+        listaVacia.push('');
+    })
+    return listaVacia;
+}
+
+function iniciarTemporizador() {
     var tiempoRestanteRosco = tiempoPartida;
     cronometro.style.backgroundColor = '#82E0AA';
     cronometro.textContent = tiempoRestanteRosco;
-    return setInterval(()=>{
+    return setInterval(() => {
         tiempoRestanteRosco--;
         cronometro.textContent = tiempoRestanteRosco;
-        if(tiempoRestanteRosco < 0){
+        if (tiempoRestanteRosco < 0) {
             finPartida("Se acabo el tiempo");
         }
-        else if(tiempoRestanteRosco / tiempoPartida < 0.1){
-           cronometro.style.backgroundColor = '#C11007'; 
+        else if (tiempoRestanteRosco / tiempoPartida < 0.1) {
+            cronometro.style.backgroundColor = '#C11007';
         }
-        else if(tiempoRestanteRosco / tiempoPartida < 0.25){
-           cronometro.style.backgroundColor = '#E1712B'; 
+        else if (tiempoRestanteRosco / tiempoPartida < 0.25) {
+            cronometro.style.backgroundColor = '#E1712B';
         }
-        else if(tiempoRestanteRosco / tiempoPartida < 0.5){
-           cronometro.style.backgroundColor = '#FFDF20'; 
+        else if (tiempoRestanteRosco / tiempoPartida < 0.5) {
+            cronometro.style.backgroundColor = '#FFDF20';
         }
-        else if(tiempoRestanteRosco / tiempoPartida < 0.75){
-           cronometro.style.backgroundColor = '#9AE630'; 
+        else if (tiempoRestanteRosco / tiempoPartida < 0.75) {
+            cronometro.style.backgroundColor = '#9AE630';
         }
-        
-    },1000);
+
+    }, 1000);
 }
 
 async function generarRoscoJuego(rosco) {
